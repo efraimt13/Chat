@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nova Search AI</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+
+/* Root Variables */
+:root {
+    --background-color: #fafafa; /* Ultra-soft white */
+    --text-color: #1a1a1a; /* Deep charcoal */
+    --primary-color: #1a73e8; /* Google blue, refined */
+    --secondary-color: #00c4b4; /* Vibrant teal */
+    --accent-color: #d93025; /* Google red, muted */
+    --neutral-color: #5f6368; /* Soft gray */
+    --input-bg: #ffffff;
+    --input-border: #dfe1e5; /* Light gray */
+    --result-bg: #ffffff;
+    --shadow-light: rgba(0, 0, 0, 0.06);
+    --shadow-medium: rgba(0, 0, 0, 0.12);
+    --border-color: #e8ecef; /* Subtle border */
+    --tooltip-bg: #202124; /* Dark tooltip */
+    --gradient-bg: linear-gradient(135deg, #1a73e8, #8ab4f8);
+    --error-bg: #fef7f7; /* Soft red */
+    --success-bg: #f0fdf4; /* Soft green */
+    --focus-ring: #8ab4f8; /* Blue focus */
+    --scrollbar-bg: rgba(0, 0, 0, 0.04);
+    --scrollbar-thumb: #dadce0;
+    --offline-bg: #fff4f4;
+    --font-base: clamp(0.9375rem, 2.5vw, 1rem);
+    --transition-base: 0.25s ease-out;
+    --border-radius: 16px;
+    --border-radius-small: 8px;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-blur: blur(10px);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --background-color: #1f1f1f;
+    --text-color: #e8ecef;
+    --primary-color: #8ab4f8;
+    --secondary-color: #26a69a;
+    --accent-color: #ef5350;
+    --neutral-color: #b0bec5;
+    --input-bg: #2d2d2d;
+    --input-border: #5c6bc0;
+    --result-bg: #2d2d2d;
+    --shadow-light: rgba(0, 0, 0, 0.3);
+    --shadow-medium: rgba(0, 0, 0, 0.5);
+    --border-color: #546e7a;
+    --tooltip-bg: #eceff1;
+    --gradient-bg: linear-gradient(135deg, #8ab4f8, #1a73e8);
+    --error-bg: #4c2c2c;
+    --success-bg: #2e4e34;
+    --focus-ring: #1a73e8;
+    --scrollbar-bg: rgba(255, 255, 255, 0.1);
+    --scrollbar-thumb: #78909c;
+    --offline-bg: #3e2723;
+    --glass-bg: rgba(45, 45, 45, 0.7);
+}
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 6rem;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    background: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior-y: contain;
+    touch-action: pan-y;
+    line-height: 1.6;
+    font-size: var(--font-base);
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Scale */
+h1 { font-size: clamp(1.875rem, 4.5vw, 2.25rem); font-weight: 500; letter-spacing: -0.015em; }
+h2 { font-size: clamp(1.375rem, 3.5vw, 1.625rem); font-weight: 500; letter-spacing: -0.01em; }
+h3 { font-size: clamp(1.125rem, 3vw, 1.25rem); font-weight: 400; letter-spacing: -0.005em; }
+
+/* Utility Classes */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: clamp(0.875rem, 2.5vw, 1.125rem);
+    z-index: 1000;
+    box-shadow: 0 2px 4px var(--shadow-light);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] header {
+    background: var(--glass-bg);
+}
+
+.header-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+h1 {
+    font-size: clamp(1.625rem, 4vw, 1.875rem);
+    background: var(--gradient-bg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+    transition: opacity 0.3s ease;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.625rem, 2vw, 0.875rem);
+}
+
+/* Header Buttons */
+#history-toggle,
+#theme-toggle {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    padding: clamp(0.5rem, 1.5vw, 0.625rem);
+    border-radius: var(--border-radius-small);
+    color: var(--neutral-color);
+    cursor: pointer;
+    font-size: clamp(0.875rem, 2.2vw, 0.9375rem);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background var(--transition-base), border-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
+}
+
+#history-toggle:hover,
+#theme-toggle:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+#history-toggle:focus-visible,
+#theme-toggle:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+/* Search Container */
+.search-container {
+    position: sticky;
+    top: 4.5rem;
+    background: var(--background-color);
+    z-index: 900;
+    padding: clamp(1.25rem, 3.5vw, 1.75rem);
+    margin-top: 4.5rem;
+    transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container.sticky {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: clamp(0.875rem, 2.5vw, 1.125rem);
+    box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: clamp(560px, 85vw, 800px);
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px var(--shadow-light);
+    transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.search-box:focus-within {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px var(--focus-ring);
+}
+
+#search-input {
+    flex: 1;
+    padding: clamp(0.875rem, 2.5vw, 1rem) clamp(1.25rem, 3vw, 1.5rem);
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    font-weight: 400;
+    outline: none;
+    caret-color: var(--primary-color);
+}
+
+#search-input::placeholder {
+    color: var(--neutral-color);
+    opacity: 0.65;
+}
+
+#clear-input {
+    background: none;
+    border: none;
+    color: var(--neutral-color);
+    font-size: 1.125rem;
+    padding: 0 clamp(0.625rem, 2vw, 0.875rem);
+    cursor: pointer;
+    display: none;
+    transition: color var(--transition-base), transform var(--transition-base);
+}
+
+#clear-input:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+#clear-input:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+#search-btn {
+    padding: clamp(0.875rem, 2.5vw, 1rem);
+    border: none;
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color var(--transition-base), transform var(--transition-base);
+}
+
+#search-btn:hover {
+    color: var(--secondary-color);
+    transform: scale(1.15);
+}
+
+#search-btn:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+/* Autocomplete Dropdown */
+.autocomplete-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: var(--border-radius);
+    margin-top: 0.625rem;
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 12px var(--shadow-medium);
+    scrollbar-width: thin;
+}
+
+.autocomplete-item {
+    padding: clamp(0.625rem, 2vw, 0.75rem) clamp(1.25rem, 3vw, 1.5rem);
+    color: var(--text-color);
+    font-size: clamp(0.875rem, 2.2vw, 0.9375rem);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    transition: background var(--transition-base), color var(--transition-base);
+}
+
+.autocomplete-item:hover,
+.autocomplete-item.selected {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Results Area */
+.results-area {
+    flex: 1;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 6rem;
+    content-visibility: auto;
+    contain-intrinsic-size: 1200px;
+}
+
+/* Filter Bar */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.625rem, 2vw, 0.875rem);
+    padding: clamp(0.625rem, 2vw, 0.75rem);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--input-border);
+    padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(1rem, 2.5vw, 1.25rem);
+    border-radius: 20px;
+    color: var(--neutral-color);
+    cursor: pointer;
+    font-size: clamp(0.875rem, 2.2vw, 0.9375rem);
+    font-weight: 400;
+    transition: background var(--transition-base), border-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.filter-btn:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+/* Sort Bar */
+.sort-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.625rem, 2vw, 0.875rem);
+    padding: clamp(0.625rem, 2vw, 0.75rem);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+.sort-btn {
+    background: transparent;
+    border: 1px solid var(--input-border);
+    padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(1rem, 2.5vw, 1.25rem);
+    border-radius: 20px;
+    color: var(--neutral-color);
+    cursor: pointer;
+    font-size: clamp(0.875rem, 2.2vw, 0.9375rem);
+    font-weight: 400;
+    transition: background var(--transition-base), border-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
+}
+
+.sort-btn.active,
+.sort-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.sort-btn:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+/* Result Card */
+.result-card {
+    position: relative;
+    background: var(--result-bg);
+    border-radius: var(--border-radius);
+    padding: clamp(1.25rem, 3vw, 1.5rem);
+    box-shadow: 0 3px 8px var(--shadow-light);
+    animation: fadeIn 0.35s ease-out forwards;
+    opacity: 0;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px var(--shadow-medium);
+}
+
+.result-card:nth-child(1) { animation-delay: 0.05s; }
+.result-card:nth-child(2) { animation-delay: 0.1s; }
+.result-card:nth-child(3) { animation-delay: 0.15s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(0.625rem, 2vw, 0.875rem);
+    margin-bottom: 0.875rem;
+}
+
+.topic-tag,
+.category-tag {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--neutral-color);
+    padding: clamp(0.375rem, 1vw, 0.5rem) clamp(0.625rem, 2vw, 0.875rem);
+    border-radius: 16px;
+    font-size: clamp(0.75rem, 2vw, 0.8125rem);
+    font-weight: 400;
+}
+
+.category-tag {
+    background: var(--secondary-color);
+    border: none;
+    color: #ffffff;
+}
+
+.result-actions {
+    display: flex;
+    gap: clamp(0.5rem, 1.5vw, 0.625rem);
+    margin-left: auto;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--neutral-color);
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding: 0.375rem;
+    position: relative;
+    transition: color var(--transition-base), transform var(--transition-base);
+}
+
+.action-btn:hover {
+    color: var(--primary-color);
+    transform: scale(1.15);
+}
+
+.action-btn:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+.action-btn .tooltip {
+    visibility: hidden;
+    background: var(--tooltip-bg);
+    color: var(--text-color);
+    font-size: clamp(0.75rem, 2vw, 0.8125rem);
+    padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(0.875rem, 2.5vw, 1rem);
+    border-radius: var(--border-radius-small);
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 2px 4px var(--shadow-light);
+    opacity: 0;
+    transition: opacity var(--transition-base), visibility var(--transition-base);
+}
+
+.action-btn:hover .tooltip,
+.action-btn:focus-visible .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.result-card h2 {
+    font-size: clamp(1.25rem, 3.5vw, 1.375rem);
+    color: var(--primary-color);
+    margin-bottom: 0.625rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color var(--transition-base);
+}
+
+.result-card h2:hover {
+    color: var(--secondary-color);
+}
+
+.result-card h2 .material-icons {
+    margin-right: 0.625rem;
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.result-card h2.collapsed .material-icons {
+    transform: rotate(-90deg);
+}
+
+.result-content {
+    max-height: 800px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.result-content.collapsed {
+    max-height: 0;
+}
+
+.result-card p {
+    margin-bottom: 0.875rem;
+    font-size: clamp(0.875rem, 2.2vw, 0.9375rem);
+    color: var(--text-color);
+}
+
+.result-card blockquote {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1rem;
+    margin: 0.875rem 0;
+    font-style: italic;
+    color: var(--neutral-color);
+    font-size: clamp(0.8125rem, 2vw, 0.875rem);
+}
+
+.result-card ul {
+    list-style: none;
+    padding-left: 1.25rem;
+    margin-bottom: 0.875rem;
+}
+
+.result-card li {
+    position: relative;
+    margin-bottom: 0.625rem;
+    padding-left: 1.25rem;
+    font-size: clamp(0.875rem, 2.2vw, 0.9375rem);
+}
+
+.result-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+.stats-box {
+    background: var(--input-bg);
+    padding: clamp(0.75rem, 2vw, 1rem);
+    border-radius: var(--border-radius);
+    margin: 0.875rem 0;
+    font-size: clamp(0.8125rem, 2vw, 0.875rem);
+    border-left: 3px solid var(--secondary-color);
+    box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+/* Suggestions Section */
+.suggestions-section {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.suggestions-section h3 {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-weight: 500;
+}
+
+.suggestion-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.625rem, 2vw, 0.875rem);
+    overflow-x: auto;
+    padding-bottom: 0.625rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--scrollbar-bg);
+}
+
+.suggestion-chip {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(1rem, 2.5vw, 1.25rem);
+    border-radius: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: clamp(0.8125rem, 2vw, 0.875rem);
+    font-weight: 400;
+    white-space: nowrap;
+    transition: background var(--transition-base), border-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
+}
+
+.suggestion-chip:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.suggestion-chip:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+/* Result Card Preview (New Feature) */
+.result-card:hover .result-preview {
+    display: block;
+}
+
+.result-preview {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: clamp(200px, 25vw, 300px);
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: var(--border-radius);
+    padding: clamp(0.75rem, 2vw, 1rem);
+    box-shadow: 0 4px 12px var(--shadow-medium);
+    z-index: 10;
+    font-size: clamp(0.75rem, 2vw, 0.8125rem);
+    color: var(--neutral-color);
+}
+
+.result-preview p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .result-preview {
+        display: none;
+    }
+}
+
+/* Contextual Menu (New Feature) */
+.context-menu {
+    position: absolute;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: var(--border-radius-small);
+    box-shadow: 0 4px 12px var(--shadow-medium);
+    z-index: 100;
+    display: none;
+    padding: 0.5rem 0;
+}
+
+.context-menu.active {
+    display: block;
+}
+
+.context-menu-item {
+    padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(1rem, 2.5vw, 1.25rem);
+    color: var(--text-color);
+    font-size: clamp(0.8125rem, 2vw, 0.875rem);
+    cursor: pointer;
+    transition: background var(--transition-base), color var(--transition-base);
+}
+
+.context-menu-item:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: none;
+    align-self: center;
+    margin: 2rem 0;
+    width: 24px;
+    height: 24px;
+    border: 4px solid var(--primary-color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.loading-spinner.active {
+    display: block;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* History Drawer */
+.history-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: clamp(300px, 28vw, 400px);
+    height: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: clamp(4.5rem, 12vh, 5.5rem) clamp(1.25rem, 3vw, 1.5rem);
+    box-shadow: -3px 0 8px var(--shadow-medium);
+    transition: right 0.4s ease;
+    z-index: 900;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.history-drawer.active {
+    right: 0;
+}
+
+.history-tabs {
+    display: flex;
+    gap: clamp(0.625rem, 2vw, 0.875rem);
+    margin-bottom: 1.25rem;
+}
+
+.tab-btn {
+    background: transparent;
+    border: 1px solid var(--input-border);
+    padding: clamp(0.5rem, 1.5vw, 0.625rem) clamp(1rem, 2.5vw, 1.25rem);
+    border-radius: 20px;
+    color: var(--neutral-color);
+    cursor: pointer;
+    font-size: clamp(0.875rem, 2.2vw, 0.9375rem);
+    font-weight: 400;
+    transition: background var(--transition-base), border-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.tab-btn:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+.history-drawer h3 {
+    font-size: clamp(1.125rem, 3vw, 1.25rem);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-weight: 500;
+}
+
+.history-list,
+.saved-list {
+    display: none;
+}
+
+.history-list.active,
+.saved-list.active {
+    display: block;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(0.625rem, 2vw, 0.75rem);
+    margin-bottom: 0.625rem;
+    background: var(--result-bg);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: clamp(0.875rem, 2.2vw, 0.9375rem);
+    box-shadow: 0 2px 4px var(--shadow-light);
+    transition: background var(--transition-base), transform var(--transition-base);
+}
+
+.history-item:hover {
+    background: var(--input-bg);
+    transform: scale(1.02);
+}
+
+.history-item span {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 0.625rem;
+}
+
+.history-item .timestamp {
+    font-size: clamp(0.75rem, 2vw, 0.8125rem);
+    color: var(--neutral-color);
+    margin-right: 0.625rem;
+}
+
+.history-item .delete-btn {
+    background: none;
+    border: none;
+    color: var(--neutral-color);
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding: 0.375rem;
+    transition: color var(--transition-base), transform var(--transition-base);
+}
+
+.history-item .delete-btn:hover {
+    color: var(--accent-color);
+    transform: scale(1.15);
+}
+
+.history-item .delete-btn:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+/* Offline State */
+body[data-offline="true"] .search-container {
+    background: var(--offline-bg);
+}
+
+body[data-offline="true"] .search-box {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+body[data-offline="true"] .search-box::after {
+    content: 'Offline Mode';
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-color);
+    font-size: clamp(0.75rem, 2vw, 0.8125rem);
+    font-weight: 500;
+}
+
+/* Lazy Loading */
+.result-content[data-lazy="true"] {
+    opacity: 0.6;
+    filter: blur(3px);
+    transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+.result-content[data-lazy="false"] {
+    opacity: 1;
+    filter: none;
+}
+
+/* Micro-Interactions */
+.result-card {
+    transition: all var(--transition-base);
+}
+
+.result-card:hover .result-actions .action-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.result-actions .action-btn {
+    opacity: 0.7;
+    transform: translateY(2px);
+    transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+/* Error and Success States */
+.result-card.error {
+    background: var(--error-bg);
+    border: 1px solid var(--accent-color);
+}
+
+.result-card.success {
+    background: var(--success-bg);
+    border: 1px solid var(--secondary-color);
+}
+
+/* Accessibility: High Contrast */
+@media (prefers-contrast: high) {
+    :root {
+        --background-color: #ffffff;
+        --text-color: #000000;
+        --primary-color: #0000ff;
+        --secondary-color: #008000;
+        --accent-color: #ff0000;
+        --input-bg: #ffffff;
+        --input-border: #000000;
+        --result-bg: #ffffff;
+        --border-color: #000000;
+        --tooltip-bg: #000000;
+        --shadow-light: rgba(0, 0, 0, 0.5);
+        --shadow-medium: rgba(0, 0, 0, 0.7);
+        --glass-bg: #ffffff;
+    }
+
+    [data-theme="dark"] {
+        --background-color: #000000;
+        --text-color: #ffffff;
+        --input-bg: #333333;
+        --input-border: #ffffff;
+        --result-bg: #333333;
+        --border-color: #ffffff;
+        --tooltip-bg: #ffffff;
+        --shadow-light: rgba(255, 255, 255, 0.5);
+        --shadow-medium: rgba(255, 255, 255, 0.7);
+        --glass-bg: #333333;
+    }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transform: none !important;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .search-container { padding: clamp(0.875rem, 2.5vw, 1.125rem); }
+    .search-container.sticky { padding: clamp(0.625rem, 2vw, 0.75rem); }
+    .results-area { padding: clamp(1rem, 3vw, 1.25rem); }
+    .result-card { padding: clamp(0.875rem, 2.5vw, 1.125rem); }
+    .history-drawer { width: clamp(280px, 80vw, 320px); }
+    .search-box { max-width: 100%; }
+    #search-btn { padding: clamp(0.625rem, 2vw, 0.75rem); }
+    .autocomplete-dropdown { max-height: 180px; }
+    h1 { font-size: clamp(1.375rem, 4vw, 1.625rem); }
+    .header-buttons { gap: clamp(0.5rem, 1.5vw, 0.625rem); }
+}
+
+@media (min-width: 768px) {
+    .search-box { max-width: clamp(640px, 80vw, 720px); }
+    .results-area { max-width: 960px; }
+}
+
+@media (min-width: 1280px) {
+    .search-box { max-width: 800px; }
+    .results-area { max-width: 1280px; }
+}
+
+@media (min-width: 1600px) {
+    .search-box { max-width: 960px; }
+    .results-area { max-width: 1440px; }
+}
+
+/* Print Styles */
+@media print {
+    header, .search-container, .history-drawer, .filter-bar, .sort-bar, .result-actions {
+        display: none;
+    }
+    .results-area {
+        max-width: 100%;
+        padding: 0;
+    }
+    .result-card {
+        box-shadow: none;
+        border: 1px solid #000;
+        margin-bottom: 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Nova Search AI</h1>
+            <div class="header-buttons">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <span class="material-icons">dark_mode</span>
+                </button>
+                <button id="history-toggle" aria-label="Toggle history and saved items">
+                    <span class="material-icons">history</span>
+                    History
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="search-container" role="search">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search anything..." aria-label="Search query" autocomplete="off">
+            <button id="clear-input" aria-label="Clear search input">
+                <span class="material-icons">close</span>
+            </button>
+            <button id="search-btn" aria-label="Search">
+                <span class="material-icons">search</span>
+            </button>
+            <div class="autocomplete-dropdown" id="autocomplete-dropdown"></div>
+        </div>
+    </div>
+    <div class="results-area" role="region" aria-live="polite">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="recent">Recent</button>
+            <button class="filter-btn" data-filter="bookmarked">Bookmarked</button>
+        </div>
+    </div>
+    <div class="history-drawer" role="dialog" aria-label="History and saved items">
+        <h3><span class="material-icons">history</span> History & Saved</h3>
+        <div class="history-tabs">
+            <button class="tab-btn active" data-tab="history">History</button>
+            <button class="tab-btn" data-tab="saved">Saved</button>
+        </div>
+        <div id="history-list" class="history-list active"></div>
+        <div id="saved-list" class="saved-list"></div>
+    </div>
+    <script src="nova-algorithm.js"></script>
+    <script>
+        // DOM elements
+        const searchInput = document.getElementById('search-input');
+        const searchBtn = document.getElementById('search-btn');
+        const clearInput = document.getElementById('clear-input');
+        const autocompleteDropdown = document.getElementById('autocomplete-dropdown');
+        const resultsArea = document.querySelector('.results-area');
+        const filterBar = document.querySelector('.filter-bar');
+        const historyToggle = document.getElementById('history-toggle');
+        const themeToggle = document.getElementById('theme-toggle');
+        const historyDrawer = document.querySelector('.history-drawer');
+        const historyList = document.getElementById('history-list');
+        const savedList = document.getElementById('saved-list');
+        const searchContainer = document.querySelector('.search-container');
+
+        // Initialize Nova AI
+        const nova = new NovaAI();
+
+        // Theme management
+        function setTheme(theme) {
+            document.body.dataset.theme = theme;
+            themeToggle.querySelector('.material-icons').textContent = theme === 'light' ? 'dark_mode' : 'light_mode';
+            localStorage.setItem('theme', theme);
+        }
+
+        // Load theme
+        const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        setTheme(savedTheme);
+
+        // Theme toggle
+        themeToggle.addEventListener('click', () => {
+            const newTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        // Sticky search bar
+        window.addEventListener('scroll', () => {
+            const offset = searchContainer.getBoundingClientRect().top;
+            searchContainer.classList.toggle('sticky', offset < 50);
+        });
+
+        // Append result card
+        function appendResult(query, response, isBookmarked = false) {
+            const card = document.createElement('div');
+            card.className = 'result-card';
+            card.dataset.query = query;
+            card.dataset.timestamp = Date.now();
+            card.dataset.bookmarked = isBookmarked ? 'true' : 'false';
+            const topic = nova.context.currentTopic || 'General';
+            card.innerHTML = `
+                <div class="result-meta">
+                    <span class="topic-tag">${topic.charAt(0).toUpperCase() + topic.slice(1)}</span>
+                    <div class="result-actions">
+                        <button class="action-btn copy-btn" aria-label="Copy result" aria-describedby="copy-tooltip">
+                            <span class="material-icons">content_copy</span>
+                            <span class="tooltip" id="copy-tooltip">Copy to clipboard</span>
+                        </button>
+                        <button class="action-btn share-btn" aria-label="Share result" aria-describedby="share-tooltip">
+                            <span class="material-icons">share</span>
+                            <span class="tooltip" id="share-tooltip">Copy share link</span>
+                        </button>
+                        <button class="action-btn bookmark-btn" aria-label="${isBookmarked ? 'Remove bookmark' : 'Bookmark result'}" aria-describedby="bookmark-tooltip">
+                            <span class="material-icons">${isBookmarked ? 'bookmark' : 'bookmark_border'}</span>
+                            <span class="tooltip" id="bookmark-tooltip">${isBookmarked ? 'Remove bookmark' : 'Bookmark result'}</span>
+                        </button>
+                    </div>
+                </div>
+                <h2 onclick="this.nextElementSibling.classList.toggle('collapsed'); this.classList.toggle('collapsed')" aria-expanded="true">
+                    <span class="material-icons">expand_more</span>
+                    ${query}
+                </h2>
+                <div class="result-content">
+                    <p>${response.main}</p>
+                    ${response.stats ? `<div class="stats-box">${response.stats}</div>` : ''}
+                    ${response.quote ? `<blockquote>${response.quote}</blockquote>` : ''}
+                    ${response.details.length ? `
+                        <ul>
+                            ${response.details.map(detail => `<li>${detail}</li>`).join('')}
+                        </ul>
+                    ` : ''}
+                    <div class="suggestions-section">
+                        <h3><span class="material-icons">lightbulb</span> Explore More</h3>
+                        <div class="suggestion-chips">
+                            ${response.related.map(q => `<a href="#" class="suggestion-chip" tabindex="0">${q}</a>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+            resultsArea.appendChild(card);
+            resultsArea.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Handle suggestion chip interactions
+            card.querySelectorAll('.suggestion-chip').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    searchInput.value = link.textContent;
+                    performSearch();
+                });
+                link.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        searchInput.value = link.textContent;
+                        performSearch();
+                    }
+                });
+            });
+
+            // Handle copy button
+            card.querySelector('.copy-btn').addEventListener('click', () => {
+                const text = card.querySelector('.result-content').textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    showActionFeedback(card.querySelector('.copy-btn'), 'check');
+                });
+            });
+
+            // Handle share button
+            card.querySelector('.share-btn').addEventListener('click', () => {
+                const url = `${window.location.origin}?q=${encodeURIComponent(query)}`;
+                navigator.clipboard.writeText(url).then(() => {
+                    showActionFeedback(card.querySelector('.share-btn'), 'check');
+                });
+            });
+
+            // Handle bookmark button
+            card.querySelector('.bookmark-btn').addEventListener('click', () => {
+                toggleBookmark(card, query, response);
+            });
+
+            // Update history
+            updateHistory(query);
+        }
+
+        // Show action feedback
+        function showActionFeedback(button, icon) {
+            button.innerHTML = `<span class="material-icons">${icon}</span>`;
+            setTimeout(() => {
+                button.innerHTML = `<span class="material-icons">${button.classList.contains('copy-btn') ? 'content_copy' : 'share'}</span><span class="tooltip">${button.classList.contains('copy-btn') ? 'Copy to clipboard' : 'Copy share link'}</span>`;
+            }, 1500);
+        }
+
+        // Update search history
+        function updateHistory(query) {
+            const item = document.createElement('div');
+            item.className = 'history-item';
+            const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            item.innerHTML = `
+                <span>${query}</span>
+                <span class="timestamp">${timestamp}</span>
+                <button class="delete-btn" aria-label="Delete history item">
+                    <span class="material-icons">delete</span>
+                </button>
+            `;
+            item.querySelector('span').addEventListener('click', () => {
+                searchInput.value = query;
+                performSearch();
+                historyDrawer.classList.remove('active');
+            });
+            item.querySelector('.delete-btn').addEventListener('click', () => {
+                item.remove();
+            });
+            historyList.prepend(item);
+            if (historyList.children.length > 15) {
+                historyList.removeChild(historyList.lastChild);
+            }
+        }
+
+        // Bookmark management
+        function toggleBookmark(card, query, response) {
+            const isBookmarked = card.dataset.bookmarked === 'true';
+            card.dataset.bookmarked = !isBookmarked;
+            const bookmarkBtn = card.querySelector('.bookmark-btn');
+            bookmarkBtn.innerHTML = `
+                <span class="material-icons">${isBookmarked ? 'bookmark_border' : 'bookmark'}</span>
+                <span class="tooltip">${isBookmarked ? 'Bookmark result' : 'Remove bookmark'}</span>
+            `;
+            bookmarkBtn.setAttribute('aria-label', isBookmarked ? 'Bookmark result' : 'Remove bookmark');
+
+            const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+            if (isBookmarked) {
+                const index = bookmarks.findIndex(b => b.query === query);
+                if (index !== -1) bookmarks.splice(index, 1);
+            } else {
+                bookmarks.push({ query, response, timestamp: Date.now() });
+            }
+            localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+            updateSavedList();
+        }
+
+        // Update saved list
+        function updateSavedList() {
+            savedList.innerHTML = '';
+            const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+            bookmarks.forEach(({ query, timestamp }) => {
+                const item = document.createElement('div');
+                item.className = 'history-item';
+                const time = new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                item.innerHTML = `
+                    <span>${query}</span>
+                    <span class="timestamp">${time}</span>
+                    <button class="delete-btn" aria-label="Remove bookmark">
+                        <span class="material-icons">delete</span>
+                    </button>
+                `;
+                item.querySelector('span').addEventListener('click', () => {
+                    searchInput.value = query;
+                    performSearch();
+                    historyDrawer.classList.remove('active');
+                });
+                item.querySelector('.delete-btn').addEventListener('click', () => {
+                    const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+                    const index = bookmarks.findIndex(b => b.query === query);
+                    if (index !== -1) bookmarks.splice(index, 1);
+                    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+                    item.remove();
+                    const card = resultsArea.querySelector(`[data-query="${query}"]`);
+                    if (card) {
+                        card.dataset.bookmarked = 'false';
+                        card.querySelector('.bookmark-btn').innerHTML = `
+                            <span class="material-icons">bookmark_border</span>
+                            <span class="tooltip">Bookmark result</span>
+                        `;
+                    }
+                });
+                savedList.prepend(item);
+            });
+        }
+
+        // Show loading spinner
+        function showLoadingSpinner() {
+            let spinner = resultsArea.querySelector('.loading-spinner');
+            if (!spinner) {
+                spinner = document.createElement('div');
+                spinner.className = 'loading-spinner';
+                resultsArea.appendChild(spinner);
+            }
+            spinner.classList.add('active');
+        }
+
+        // Hide loading spinner
+        function hideLoadingSpinner() {
+            const spinner = resultsArea.querySelector('.loading-spinner');
+            if (spinner) spinner.classList.remove('active');
+        }
+
+        // Autocomplete
+        function showAutocomplete(query) {
+            if (!query) {
+                autocompleteDropdown.style.display = 'none';
+                return;
+            }
+            const history = Array.from(historyList.children).map(item => item.querySelector('span').textContent);
+            const suggestions = [...new Set([...history, ...nova.relatedQueries[nova.context.currentTopic || 'tech'] || []])]
+                .filter(q => q.toLowerCase().includes(query.toLowerCase()))
+                .slice(0, 5);
+            autocompleteDropdown.innerHTML = suggestions.map((s, i) => `
+                <div class="autocomplete-item ${i === 0 ? 'selected' : ''}" data-query="${s}">${s}</div>
+            `).join('');
+            autocompleteDropdown.style.display = suggestions.length ? 'block' : 'none';
+        }
+
+        // Handle autocomplete selection
+        function handleAutocompleteSelection() {
+            const selected = autocompleteDropdown.querySelector('.selected');
+            if (selected) {
+                searchInput.value = selected.dataset.query;
+                performSearch();
+            }
+        }
+
+        // Handle search
+        function performSearch() {
+            const query = searchInput.value.trim();
+            if (query) {
+                showLoadingSpinner();
+                setTimeout(() => {
+                    const response = nova.processQuery(query);
+                    hideLoadingSpinner();
+                    appendResult(query, response);
+                    searchInput.value = '';
+                    clearInput.style.display = 'none';
+                    autocompleteDropdown.style.display = 'none';
+                }, 400);
+            }
+        }
+
+        // Filter results
+        function filterResults(filter) {
+            const cards = resultsArea.querySelectorAll('.result-card');
+            cards.forEach(card => {
+                const timestamp = parseInt(card.dataset.timestamp);
+                const isBookmarked = card.dataset.bookmarked === 'true';
+                card.style.display = filter === 'all' ? 'block' :
+                    filter === 'recent' ? (Date.now() - timestamp < 24 * 60 * 60 * 1000 ? 'block' : 'none') :
+                    filter === 'bookmarked' ? (isBookmarked ? 'block' : 'none') : 'block';
+            });
+        }
+
+        // Event listeners
+        searchBtn.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                if (autocompleteDropdown.style.display === 'block') {
+                    handleAutocompleteSelection();
+                } else {
+                    performSearch();
+                }
+            }
+        });
+        searchInput.addEventListener('input', debounce(() => {
+            showAutocomplete(searchInput.value);
+            clearInput.style.display = searchInput.value ? 'block' : 'none';
+        }, 100));
+        searchInput.addEventListener('keydown', (e) => {
+            const items = autocompleteDropdown.querySelectorAll('.autocomplete-item');
+            if (!items.length) return;
+            const selected = autocompleteDropdown.querySelector('.selected');
+            let index = selected ? Array.from(items).indexOf(selected) : -1;
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                index = Math.min(index + 1, items.length - 1);
+                items.forEach(item => item.classList.remove('selected'));
+                items[index].classList.add('selected');
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                index = Math.max(index - 1, 0);
+                items.forEach(item => item.classList.remove('selected'));
+                items[index].classList.add('selected');
+            } else if (e.key === 'Escape') {
+                autocompleteDropdown.style.display = 'none';
+            }
+        });
+        clearInput.addEventListener('click', () => {
+            searchInput.value = '';
+            clearInput.style.display = 'none';
+            autocompleteDropdown.style.display = 'none';
+            searchInput.focus();
+        });
+        historyToggle.addEventListener('click', () => {
+            historyDrawer.classList.toggle('active');
+        });
+        filterBar.addEventListener('click', (e) => {
+            if (e.target.classList.contains('filter-btn')) {
+                filterBar.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                filterResults(e.target.dataset.filter);
+            }
+        });
+        document.querySelector('.history-tabs').addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab-btn')) {
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.history-list, .saved-list').forEach(list => list.classList.remove('active'));
+                e.target.classList.add('active');
+                document.getElementById(`${e.target.dataset.tab}-list`).classList.add('active');
+            }
+        });
+
+        // Swipe gestures for history drawer
+        let touchStartX = 0;
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+        document.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            if (touchStartX - touchEndX > 50 && !historyDrawer.classList.contains('active')) {
+                historyDrawer.classList.add('active');
+            } else if (touchEndX - touchStartX >50 && historyDrawer.classList.contains('active')) {
+                historyDrawer.classList.remove('active');
+            }
+        });
+
+        // Debounce utility
+        function debounce(func, wait) {
+            let timeout;
+            return function (...args) {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, args), wait);
+            };
+        }
+
+        // Initial message
+        window.addEventListener('load', () => {
+            const initialCard = document.createElement('div');
+            initialCard.className = 'result-card';
+            initialCard.dataset.query = 'Welcome';
+            initialCard.dataset.timestamp = Date.now();
+            initialCard.innerHTML = `
+                <div class="result-meta">
+                    <span class="topic-tag">Welcome</span>
+                </div>
+                <h2 aria-expanded="true">
+                    <span class="material-icons">expand_more</span>
+                    Welcome to Nova Search AI
+                </h2>
+                <div class="result-content">
+                    <p>Explore any topic, from AI to history. Try searches like "Why is sleep important?" or "What is war?" for rich, context-aware answers.</p>
+                    <div class="suggestions-section">
+                        <h3><span class="material-icons">lightbulb</span> Try These</h3>
+                        <div class="suggestion-chips">
+                            <a href="#" class="suggestion-chip" tabindex="0">How does AI work?</a>
+                            <a href="#" class="suggestion-chip" tabindex="0">What causes climate change?</a>
+                            <a href="#" class="suggestion-chip" tabindex="0">What is philosophy?</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            resultsArea.appendChild(initialCard);
+            initialCard.querySelectorAll('.suggestion-chip').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    searchInput.value = link.textContent;
+                    performSearch();
+                });
+                link.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        searchInput.value = link.textContent;
+                        performSearch();
+                    }
+                });
+            });
+
+            // Load saved bookmarks
+            updateSavedList();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,558 @@
+{
+  "facts": [
+    {
+      "topic": "tech",
+      "subtopics": ["edge computing"],
+      "text": "Edge data centers often colocate renewable micro-grids to cut line-loss and emissions.",
+      "weight": 0.84,
+      "keywords": ["edge computing", "renewable energy", "data centers", "emissions"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["edge computing", "ai"],
+      "text": "Federated edge AI keeps health wearables compliant with HIPAA by training locally.",
+      "weight": 0.83,
+      "keywords": ["edge computing", "federated AI", "health wearables", "HIPAA"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["blockchain", "tokenomics"],
+      "text": "Burn-and-mint equilibrium combats stablecoin supply shocks via algorithmic burning.",
+      "weight": 0.82,
+      "keywords": ["blockchain", "tokenomics", "stablecoin", "algorithmic burning"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["blockchain", "tokenomics", "gaming"],
+      "text": "Play-to-earn games embed micro-token economies rewarding in-game tasks.",
+      "weight": 0.8,
+      "keywords": ["blockchain", "tokenomics", "play-to-earn", "gaming"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["quantum tech"],
+      "text": "Quantum key distribution detects eavesdroppers through photon-state collapse.",
+      "weight": 0.88,
+      "keywords": ["quantum tech", "quantum key distribution", "photon"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["quantum tech", "chemistry"],
+      "text": "NISQ devices exploit noisy qubits for variational chemistry simulations.",
+      "weight": 0.85,
+      "keywords": ["quantum tech", "NISQ", "qubits", "chemistry"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["digital twins"],
+      "text": "Digital twins stream real-time sensor data into physics-based simulations for predictive maintenance.",
+      "weight": 0.88,
+      "keywords": ["digital twins", "sensors", "predictive maintenance"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["digital twins", "manufacturing"],
+      "text": "In manufacturing, virtual replicas cut downtime by forecasting component fatigue weeks ahead.",
+      "weight": 0.86,
+      "keywords": ["digital twins", "manufacturing", "downtime", "component fatigue"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["zero-trust security"],
+      "text": "Zero-trust networks authenticate and authorize every connection, even inside the perimeter.",
+      "weight": 0.88,
+      "keywords": ["zero-trust", "security", "authentication"]
+    },
+    {
+      "topic": "tech",
+      "subtopics": ["zero-trust security"],
+      "text": "Micro-segmentation in zero-trust limits lateral movement after a breach.",
+      "weight": 0.84,
+      "keywords": ["zero-trust", "security", "micro-segmentation", "breach"]
+    },
+    {
+      "topic": "ai",
+      "subtopics": ["large language models"],
+      "text": "Context window extension via attention compression enables 256k-token prompts.",
+      "weight": 0.86,
+      "keywords": ["large language models", "context window", "attention compression"]
+    },
+    {
+      "topic": "ai",
+      "subtopics": ["large language models", "retrieval"],
+      "text": "Retrieval-augmented generation feeds vector-search snippets back into the prompt for factual accuracy.",
+      "weight": 0.85,
+      "keywords": ["large language models", "retrieval-augmented", "vector search"]
+    },
+    {
+      "topic": "ai",
+      "subtopics": ["multimodal"],
+      "text": "CLIP aligns image and text embeddings via contrastive loss.",
+      "weight": 0.88,
+      "keywords": ["multimodal", "CLIP", "embeddings", "contrastive loss"]
+    },
+    {
+      "topic": "ai",
+      "subtopics": ["multimodal", "audio"],
+      "text": "AudioLM predicts semantic and acoustic tokens for zero-shot voice continuation.",
+      "weight": 0.84,
+      "keywords": ["multimodal", "AudioLM", "voice continuation"]
+    },
+    {
+      "topic": "ai",
+      "subtopics": ["audio generation"],
+      "text": "Neural vocoders like WaveGlow synthesize 24-kHz speech in real time.",
+      "weight": 0.88,
+      "keywords": ["audio generation", "neural vocoders", "WaveGlow", "speech"]
+    },
+    {
+      "topic": "ai",
+      "subtopics": ["audio generation", "music"],
+      "text": "MusicLM generates multi-minute compositions conditioned on text prompts.",
+      "weight": 0.85,
+      "keywords": ["audio generation", "MusicLM", "music", "text prompts"]
+    },
+    {
+      "topic": "ai",
+      "subtopics": ["data governance"],
+      "text": "Model cards document biases and intended use to improve AI transparency.",
+      "weight": 0.87,
+      "keywords": ["data governance", "model cards", "AI transparency"]
+    },
+    {
+      "topic": "ai",
+      "subtopics": ["data governance"],
+      "text": "Datasheets for Datasets record collection context and licensing to aid auditing.",
+      "weight": 0.84,
+      "keywords": ["data governance", "datasheets", "auditing"]
+    },
+    {
+      "topic": "coding",
+      "subtopics": ["rust"],
+      "text": "Rust’s borrow checker prevents data races at compile time.",
+      "weight": 0.88,
+      "keywords": ["rust", "borrow checker", "data races"]
+    },
+    {
+      "topic": "coding",
+      "subtopics": ["rust"],
+      "text": "Cargo.toml manages crate dependencies with semantic version ranges.",
+      "weight": 0.84,
+      "keywords": ["rust", "Cargo.toml", "dependencies"]
+    },
+    {
+      "topic": "coding",
+      "subtopics": ["graphql"],
+      "text": "GraphQL introspection queries let clients discover the schema dynamically.",
+      "weight": 0.86,
+      "keywords": ["graphql", "introspection", "schema"]
+    },
+    {
+      "topic": "coding",
+      "subtopics": ["graphql"],
+      "text": "Apollo Federation composes multiple GraphQL micro-schemas into a super-graph.",
+      "weight": 0.84,
+      "keywords": ["graphql", "Apollo Federation", "micro-schemas"]
+    },
+    {
+      "topic": "coding",
+      "subtopics": ["webassembly"],
+      "text": "WebAssembly executes near-native binaries safely inside the browser sandbox.",
+      "weight": 0.88,
+      "keywords": ["webassembly", "binaries", "browser sandbox"]
+    },
+    {
+      "topic": "coding",
+      "subtopics": ["webassembly"],
+      "text": "WASI adds POSIX-like syscalls so Wasm modules run outside browsers.",
+      "weight": 0.85,
+      "keywords": ["webassembly", "WASI", "syscalls"]
+    },
+    {
+      "topic": "coding",
+      "subtopics": ["design systems"],
+      "text": "Design tokens store colors and spacing centrally for cross-platform consistency.",
+      "weight": 0.87,
+      "keywords": ["design systems", "design tokens", "consistency"]
+    },
+    {
+      "topic": "coding",
+      "subtopics": ["design systems"],
+      "text": "Storybook documents reusable UI components with live props and tests.",
+      "weight": 0.84,
+      "keywords": ["design systems", "Storybook", "UI components"]
+    },
+    {
+      "topic": "science",
+      "subtopics": ["climate"],
+      "text": "Arctic amplification warms polar regions four times faster than the global mean.",
+      "weight": 0.88,
+      "keywords": ["climate", "Arctic amplification", "warming"]
+    },
+    {
+      "topic": "science",
+      "subtopics": ["climate", "geoengineering"],
+      "text": "Stratospheric aerosol injection is studied as a geo-engineering stop-gap.",
+      "weight": 0.84,
+      "keywords": ["climate", "geoengineering", "aerosol injection"]
+    },
+    {
+      "topic": "science",
+      "subtopics": ["chemistry"],
+      "text": "Metal–organic frameworks store hydrogen at room temperature via nanoporous cages.",
+      "weight": 0.88,
+      "keywords": ["chemistry", "metal-organic frameworks", "hydrogen storage"]
+    },
+    {
+      "topic": "science",
+      "subtopics": ["chemistry", "solar energy"],
+      "text": "Perovskite solar cells surpassed 26% efficiency within a decade of research.",
+      "weight": 0.86,
+      "keywords": ["chemistry", "perovskite", "solar cells"]
+    },
+    {
+      "topic": "history",
+      "subtopics": ["silk road"],
+      "text": "The Silk Road stretched 6,400 km linking Han China to Roman Syria.",
+      "weight": 0.84,
+      "keywords": ["history", "Silk Road", "trade"]
+    },
+    {
+      "topic": "history",
+      "subtopics": ["columbian exchange"],
+      "text": "The Columbian Exchange moved crops like maize and potatoes between hemispheres.",
+      "weight": 0.83,
+      "keywords": ["history", "Columbian Exchange", "crops"]
+    },
+    {
+      "topic": "history",
+      "subtopics": ["industrial revolution"],
+      "text": "Steam power mechanized textile mills, boosting cotton output ten-fold by 1850.",
+      "weight": 0.88,
+      "keywords": ["history", "industrial revolution", "steam power", "textile"]
+    },
+    {
+      "topic": "history",
+      "subtopics": ["industrial revolution"],
+      "text": "The spinning jenny let one worker operate eight spools simultaneously.",
+      "weight": 0.84,
+      "keywords": ["history", "industrial revolution", "spinning jenny"]
+    },
+    {
+      "topic": "health",
+      "subtopics": ["wellness"],
+      "text": "Meditation lowers resting cortisol, reducing chronic inflammation risks.",
+      "weight": 0.84,
+      "keywords": ["health", "meditation", "cortisol", "inflammation"]
+    },
+    {
+      "topic": "health",
+      "subtopics": ["wellness", "exercise"],
+      "text": "Interval walking alternates brisk and slow paces, improving glycemic control.",
+      "weight": 0.82,
+      "keywords": ["health", "interval walking", "glycemic control"]
+    },
+    {
+      "topic": "health",
+      "subtopics": ["mental health"],
+      "text": "Cognitive Behavioral Therapy restructures negative thought patterns to treat depression.",
+      "weight": 0.88,
+      "keywords": ["health", "mental health", "CBT", "depression"]
+    },
+    {
+      "topic": "health",
+      "subtopics": ["mental health"],
+      "text": "Regular social interaction lowers dementia risk by maintaining neural connectivity.",
+      "weight": 0.84,
+      "keywords": ["health", "mental health", "social interaction", "dementia"]
+    },
+    {
+      "topic": "environment",
+      "subtopics": ["sustainability"],
+      "text": "Biochar sequesters carbon and enhances soil water retention.",
+      "weight": 0.86,
+      "keywords": ["environment", "biochar", "carbon sequestration"]
+    },
+    {
+      "topic": "environment",
+      "subtopics": ["sustainability", "solar energy"],
+      "text": "Floating solar farms reduce reservoir evaporation while generating power.",
+      "weight": 0.84,
+      "keywords": ["environment", "floating solar", "evaporation"]
+    },
+    {
+      "topic": "environment",
+      "subtopics": ["carbon capture"],
+      "text": "Post-combustion capture uses amine solvents to strip CO₂ from flue gas.",
+      "weight": 0.88,
+      "keywords": ["environment", "carbon capture", "amine solvents"]
+    },
+    {
+      "topic": "environment",
+      "subtopics": ["carbon capture"],
+      "text": "Mineralization injects CO₂ into basalt, forming stable carbonates within two years.",
+      "weight": 0.85,
+      "keywords": ["environment", "carbon capture", "mineralization"]
+    },
+    {
+      "topic": "sports",
+      "subtopics": ["ultra-endurance"],
+      "text": "Ultramarathoners metabolize up to 90 g carbs per hour to delay bonking.",
+      "weight": 0.86,
+      "keywords": ["sports", "ultramarathon", "carbohydrates"]
+    },
+    {
+      "topic": "sports",
+      "subtopics": ["ultra-endurance"],
+      "text": "Foot-strike variability prevents overuse injuries in 100-mile races.",
+      "weight": 0.82,
+      "keywords": ["sports", "ultramarathon", "foot-strike", "injuries"]
+    },
+    {
+      "topic": "sports",
+      "subtopics": ["esports"],
+      "text": "League of Legends Worlds 2023 peaked at 6 million concurrent viewers.",
+      "weight": 0.88,
+      "keywords": ["sports", "esports", "League of Legends", "viewership"]
+    },
+    {
+      "topic": "sports",
+      "subtopics": ["esports"],
+      "text": "Franchised esports leagues guarantee slots to teams for revenue sharing.",
+      "weight": 0.84,
+      "keywords": ["sports", "esports", "franchised leagues"]
+    },
+    {
+      "topic": "entertainment",
+      "subtopics": ["nft art"],
+      "text": "On-chain generative art stores algorithm seeds directly in smart contracts.",
+      "weight": 0.86,
+      "keywords": ["entertainment", "nft art", "generative art", "smart contracts"]
+    },
+    {
+      "topic": "entertainment",
+      "subtopics": ["nft art"],
+      "text": "Royalty-enforced NFTs auto-split resale earnings to the original artist wallet.",
+      "weight": 0.83,
+      "keywords": ["entertainment", "nft art", "royalties", "NFTs"]
+    },
+    {
+      "topic": "entertainment",
+      "subtopics": ["podcasting"],
+      "text": "Dynamic ad insertion customizes podcast spots based on listener region.",
+      "weight": 0.87,
+      "keywords": ["entertainment", "podcasting", "dynamic ad insertion"]
+    },
+    {
+      "topic": "entertainment",
+      "subtopics": ["podcasting"],
+      "text": "RSS enclosures deliver episodic audio independent of proprietary platforms.",
+      "weight": 0.84,
+      "keywords": ["entertainment", "podcasting", "RSS enclosures"]
+    },
+    {
+      "topic": "productivity",
+      "subtopics": ["knowledge management"],
+      "text": "Zettelkasten links atomic notes bi-directionally to surface serendipitous ideas.",
+      "weight": 0.88,
+      "keywords": ["productivity", "Zettelkasten", "knowledge management"]
+    },
+    {
+      "topic": "productivity",
+      "subtopics": ["knowledge management"],
+      "text": "Spaced-repetition flashcards optimize memory consolidation via increasing intervals.",
+      "weight": 0.84,
+      "keywords": ["productivity", "spaced repetition", "flashcards"]
+    },
+    {
+      "topic": "productivity",
+      "subtopics": ["time blocking"],
+      "text": "Time-blocking budgets each hour to one task, cutting context switching.",
+      "weight": 0.88,
+      "keywords": ["productivity", "time blocking", "context switching"]
+    },
+    {
+      "topic": "productivity",
+      "subtopics": ["time blocking"],
+      "text": "Batching email replies twice daily prevents attention residue.",
+      "weight": 0.84,
+      "keywords": ["productivity", "time blocking", "batching", "email"]
+    },
+    {
+      "topic": "culture",
+      "subtopics": ["digital culture"],
+      "text": "Meme culture accelerates political messaging through remixable humor.",
+      "weight": 0.86,
+      "keywords": ["culture", "meme culture", "political messaging"]
+    },
+    {
+      "topic": "culture",
+      "subtopics": ["digital culture"],
+      "text": "Fandom subreddits crowd-produce lore extensions for popular shows.",
+      "weight": 0.83,
+      "keywords": ["culture", "fandom", "subreddits", "lore"]
+    },
+    {
+      "topic": "culture",
+      "subtopics": ["language preservation"],
+      "text": "UNESCO lists over 2,500 languages as endangered, many lacking written form.",
+      "weight": 0.88,
+      "keywords": ["culture", "language preservation", "endangered languages"]
+    },
+    {
+      "topic": "culture",
+      "subtopics": ["language preservation"],
+      "text": "Digital corpora capture oral histories to revitalize indigenous tongues.",
+      "weight": 0.84,
+      "keywords": ["culture", "language preservation", "digital corpora"]
+    },
+    {
+      "topic": "politics",
+      "subtopics": ["governance models"],
+      "text": "Quadratic voting lets citizens allocate voice credits to issues they value most.",
+      "weight": 0.87,
+      "keywords": ["politics", "quadratic voting", "governance"]
+    },
+    {
+      "topic": "politics",
+      "subtopics": ["governance models"],
+      "text": "Liquid democracy blends direct and representative voting via vote delegation.",
+      "weight": 0.84,
+      "keywords": ["politics", "liquid democracy", "voting"]
+    },
+    {
+      "topic": "politics",
+      "subtopics": ["geopolitics"],
+      "text": "Soft power measures a state's cultural and diplomatic influence abroad.",
+      "weight": 0.88,
+      "keywords": ["politics", "geopolitics", "soft power"]
+    },
+    {
+      "topic": "politics",
+      "subtopics": ["geopolitics"],
+      "text": "The Thucydides Trap describes conflict risk when a rising power challenges a hegemon.",
+      "weight": 0.86,
+      "keywords": ["politics", "geopolitics", "Thucydides Trap"]
+    },
+    {
+      "topic": "philosophy",
+      "subtopics": ["ethics"],
+      "text": "Utilitarianism seeks the greatest net happiness for the greatest number.",
+      "weight": 0.88,
+      "keywords": ["philosophy", "utilitarianism", "ethics"]
+    },
+    {
+      "topic": "philosophy",
+      "subtopics": ["ethics"],
+      "text": "Deontology judges actions by adherence to duty regardless of outcomes.",
+      "weight": 0.86,
+      "keywords": ["philosophy", "deontology", "ethics"]
+    },
+    {
+      "topic": "philosophy",
+      "subtopics": ["metaphysics"],
+      "text": "Dualism posits that mind and matter are fundamentally distinct substances.",
+      "weight": 0.88,
+      "keywords": ["philosophy", "dualism", "metaphysics"]
+    },
+    {
+      "topic": "philosophy",
+      "subtopics": ["metaphysics"],
+      "text": "Materialism holds that everything, including consciousness, emerges from physical processes.",
+    "weight": 0.86,
+    "keywords": ["philosophy", "materialism", "metaphysics"]
+    },
+    {
+    "topic": "economics",
+    "subtopics": ["behavioral economics"],
+    "text": "Loss aversion makes people value avoiding losses more than equivalent gains.",
+    "weight": 0.87,
+    "keywords": ["economics", "loss aversion", "behavior"]
+    },
+    {
+    "topic": "economics", 
+    "subtopics": ["game theory"],
+    "text": "Nash equilibrium occurs when no player can benefit by unilaterally changing strategy.",
+    "weight": 0.89,
+    "keywords": ["economics", "Nash equilibrium", "game theory"]
+    },
+    {
+    "topic": "mathematics",
+    "subtopics": ["topology"],
+    "text": "Homology groups measure holes in geometric objects algebraically.",
+    "weight": 0.85,
+    "keywords": ["mathematics", "topology", "homology"]
+    },
+    
+{
+    "topic": "finance",
+    "subtopics": ["cryptocurrency"],
+    "text": "DeFi protocols enable permissionless financial services through smart contracts.",
+    "weight": 0.87,
+    "keywords": ["finance", "cryptocurrency", "DeFi", "smart contracts"]
+},
+{
+    "topic": "health",
+    "subtopics": ["nutrition"],
+    "text": "Intermittent fasting may improve metabolic health by increasing insulin sensitivity.",
+    "weight": 0.85,
+    "keywords": ["health", "nutrition", "intermittent fasting", "insulin sensitivity"]
+},
+{
+    "topic": "tech",
+    "subtopics": ["cybersecurity", "ai"],
+    "text": "Adversarial machine learning uncovers biases in automated threat detection systems.",
+    "weight": 0.83,
+    "keywords": ["cybersecurity", "ai", "adversarial", "threat detection"]
+},
+{
+    "topic": "science",
+    "subtopics": ["biotechnology"],
+    "text": "CRISPR gene editing has revolutionized molecular biology by enabling precise DNA modifications.",
+    "weight": 0.89,
+    "keywords": ["science", "biotechnology", "CRISPR", "gene editing"]
+},
+{
+    "topic": "literature",
+    "subtopics": ["modern fiction"],
+    "text": "Postmodern narratives often blend meta-fiction with nonlinear storytelling.",
+    "weight": 0.84,
+    "keywords": ["literature", "modern fiction", "postmodern", "meta-fiction"]
+},
+{
+    "topic": "sports",
+    "subtopics": ["soccer"],
+    "text": "Data analytics in soccer inform tactical decisions by analyzing player movement and passing networks.",
+    "weight": 0.86,
+    "keywords": ["sports", "soccer", "data analytics", "tactics"]
+},
+{
+    "topic": "entertainment",
+    "subtopics": ["streaming"],
+    "text": "Personalized recommendation algorithms drive user engagement on streaming platforms.",
+    "weight": 0.87,
+    "keywords": ["entertainment", "streaming", "algorithms", "recommendations"]
+},
+{
+    "topic": "economics",
+    "subtopics": ["macroeconomics"],
+    "text": "Quantitative easing influences inflation and asset bubbles during economic downturns.",
+    "weight": 0.86,
+    "keywords": ["economics", "macroeconomics", "quantitative easing", "inflation"]
+},
+{
+    "topic": "philosophy",
+    "subtopics": ["existentialism"],
+    "text": "Existentialism explores the absurdity of life and the search for meaning in a chaotic world.",
+    "weight": 0.87,
+    "keywords": ["philosophy", "existentialism", "absurdity", "life meaning"]
+},
+{
+    "topic": "environment",
+    "subtopics": ["biodiversity"],
+    "text": "Conservation efforts focus on preserving species diversity to maintain ecosystem resilience.",
+    "weight": 0.85,
+    "keywords": ["environment", "biodiversity", "conservation", "ecosystem"]
+}
+  ]
+}
