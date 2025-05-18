@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nova Search AI</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    =<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Nova Search AI</h1>
+            <div class="header-buttons">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <span class="material-icons">dark_mode</span>
+                </button>
+                <button id="history-toggle" aria-label="Toggle history and saved items">
+                    <span class="material-icons">history</span>
+                    History
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="search-container" role="search">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search anything..." aria-label="Search query" autocomplete="off">
+            <button id="clear-input" aria-label="Clear search input">
+                <span class="material-icons">close</span>
+            </button>
+            <button id="search-btn" aria-label="Search">
+                <span class="material-icons">search</span>
+            </button>
+            <div class="autocomplete-dropdown" id="autocomplete-dropdown"></div>
+        </div>
+    </div>
+    <div class="results-area" role="region" aria-live="polite">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="recent">Recent</button>
+            <button class="filter-btn" data-filter="bookmarked">Bookmarked</button>
+        </div>
+    </div>
+    <div class="history-drawer" role="dialog" aria-label="History and saved items">
+        <h3><span class="material-icons">history</span> History & Saved</h3>
+        <div class="history-tabs">
+            <button class="tab-btn active" data-tab="history">History</button>
+            <button class="tab-btn" data-tab="saved">Saved</button>
+        </div>
+        <div id="history-list" class="history-list active"></div>
+        <div id="saved-list" class="saved-list"></div>
+    </div>
+    <script src="nova-algorithm.js"></script>
+    <script>
+        // DOM elements
+        const searchInput = document.getElementById('search-input');
+        const searchBtn = document.getElementById('search-btn');
+        const clearInput = document.getElementById('clear-input');
+        const autocompleteDropdown = document.getElementById('autocomplete-dropdown');
+        const resultsArea = document.querySelector('.results-area');
+        const filterBar = document.querySelector('.filter-bar');
+        const historyToggle = document.getElementById('history-toggle');
+        const themeToggle = document.getElementById('theme-toggle');
+        const historyDrawer = document.querySelector('.history-drawer');
+        const historyList = document.getElementById('history-list');
+        const savedList = document.getElementById('saved-list');
+        const searchContainer = document.querySelector('.search-container');
+
+        // Initialize Nova AI
+        const nova = new NovaAI();
+
+        // Theme management
+        function setTheme(theme) {
+            document.body.dataset.theme = theme;
+            themeToggle.querySelector('.material-icons').textContent = theme === 'light' ? 'dark_mode' : 'light_mode';
+            localStorage.setItem('theme', theme);
+        }
+
+        // Load theme
+        const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        setTheme(savedTheme);
+
+        // Theme toggle
+        themeToggle.addEventListener('click', () => {
+            const newTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        // Sticky search bar
+        window.addEventListener('scroll', () => {
+            const offset = searchContainer.getBoundingClientRect().top;
+            searchContainer.classList.toggle('sticky', offset < 50);
+        });
+
+        // Append result card
+        function appendResult(query, response, isBookmarked = false) {
+            const card = document.createElement('div');
+            card.className = 'result-card';
+            card.dataset.query = query;
+            card.dataset.timestamp = Date.now();
+            card.dataset.bookmarked = isBookmarked ? 'true' : 'false';
+            const topic = nova.context.currentTopic || 'General';
+            card.innerHTML = `
+                <div class="result-meta">
+                    <span class="topic-tag">${topic.charAt(0).toUpperCase() + topic.slice(1)}</span>
+                    <div class="result-actions">
+                        <button class="action-btn copy-btn" aria-label="Copy result" aria-describedby="copy-tooltip">
+                            <span class="material-icons">content_copy</span>
+                            <span class="tooltip" id="copy-tooltip">Copy to clipboard</span>
+                        </button>
+                        <button class="action-btn share-btn" aria-label="Share result" aria-describedby="share-tooltip">
+                            <span class="material-icons">share</span>
+                            <span class="tooltip" id="share-tooltip">Copy share link</span>
+                        </button>
+                        <button class="action-btn bookmark-btn" aria-label="${isBookmarked ? 'Remove bookmark' : 'Bookmark result'}" aria-describedby="bookmark-tooltip">
+                            <span class="material-icons">${isBookmarked ? 'bookmark' : 'bookmark_border'}</span>
+                            <span class="tooltip" id="bookmark-tooltip">${isBookmarked ? 'Remove bookmark' : 'Bookmark result'}</span>
+                        </button>
+                    </div>
+                </div>
+                <h2 onclick="this.nextElementSibling.classList.toggle('collapsed'); this.classList.toggle('collapsed')" aria-expanded="true">
+                    <span class="material-icons">expand_more</span>
+                    ${query}
+                </h2>
+                <div class="result-content">
+                    <p>${response.main}</p>
+                    ${response.stats ? `<div class="stats-box">${response.stats}</div>` : ''}
+                    ${response.quote ? `<blockquote>${response.quote}</blockquote>` : ''}
+                    ${response.details.length ? `
+                        <ul>
+                            ${response.details.map(detail => `<li>${detail}</li>`).join('')}
+                        </ul>
+                    ` : ''}
+                    <div class="suggestions-section">
+                        <h3><span class="material-icons">lightbulb</span> Explore More</h3>
+                        <div class="suggestion-chips">
+                            ${response.related.map(q => `<a href="#" class="suggestion-chip" tabindex="0">${q}</a>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+            resultsArea.appendChild(card);
+            resultsArea.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Handle suggestion chip interactions
+            card.querySelectorAll('.suggestion-chip').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    searchInput.value = link.textContent;
+                    performSearch();
+                });
+                link.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        searchInput.value = link.textContent;
+                        performSearch();
+                    }
+                });
+            });
+
+            // Handle copy button
+            card.querySelector('.copy-btn').addEventListener('click', () => {
+                const text = card.querySelector('.result-content').textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    showActionFeedback(card.querySelector('.copy-btn'), 'check');
+                });
+            });
+
+            // Handle share button
+            card.querySelector('.share-btn').addEventListener('click', () => {
+                const url = `${window.location.origin}?q=${encodeURIComponent(query)}`;
+                navigator.clipboard.writeText(url).then(() => {
+                    showActionFeedback(card.querySelector('.share-btn'), 'check');
+                });
+            });
+
+            // Handle bookmark button
+            card.querySelector('.bookmark-btn').addEventListener('click', () => {
+                toggleBookmark(card, query, response);
+            });
+
+            // Update history
+            updateHistory(query);
+        }
+
+        // Show action feedback
+        function showActionFeedback(button, icon) {
+            button.innerHTML = `<span class="material-icons">${icon}</span>`;
+            setTimeout(() => {
+                button.innerHTML = `<span class="material-icons">${button.classList.contains('copy-btn') ? 'content_copy' : 'share'}</span><span class="tooltip">${button.classList.contains('copy-btn') ? 'Copy to clipboard' : 'Copy share link'}</span>`;
+            }, 1500);
+        }
+
+        // Update search history
+        function updateHistory(query) {
+            const item = document.createElement('div');
+            item.className = 'history-item';
+            const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            item.innerHTML = `
+                <span>${query}</span>
+                <span class="timestamp">${timestamp}</span>
+                <button class="delete-btn" aria-label="Delete history item">
+                    <span class="material-icons">delete</span>
+                </button>
+            `;
+            item.querySelector('span').addEventListener('click', () => {
+                searchInput.value = query;
+                performSearch();
+                historyDrawer.classList.remove('active');
+            });
+            item.querySelector('.delete-btn').addEventListener('click', () => {
+                item.remove();
+            });
+            historyList.prepend(item);
+            if (historyList.children.length > 15) {
+                historyList.removeChild(historyList.lastChild);
+            }
+        }
+
+        // Bookmark management
+        function toggleBookmark(card, query, response) {
+            const isBookmarked = card.dataset.bookmarked === 'true';
+            card.dataset.bookmarked = !isBookmarked;
+            const bookmarkBtn = card.querySelector('.bookmark-btn');
+            bookmarkBtn.innerHTML = `
+                <span class="material-icons">${isBookmarked ? 'bookmark_border' : 'bookmark'}</span>
+                <span class="tooltip">${isBookmarked ? 'Bookmark result' : 'Remove bookmark'}</span>
+            `;
+            bookmarkBtn.setAttribute('aria-label', isBookmarked ? 'Bookmark result' : 'Remove bookmark');
+
+            const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+            if (isBookmarked) {
+                const index = bookmarks.findIndex(b => b.query === query);
+                if (index !== -1) bookmarks.splice(index, 1);
+            } else {
+                bookmarks.push({ query, response, timestamp: Date.now() });
+            }
+            localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+            updateSavedList();
+        }
+
+        // Update saved list
+        function updateSavedList() {
+            savedList.innerHTML = '';
+            const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+            bookmarks.forEach(({ query, timestamp }) => {
+                const item = document.createElement('div');
+                item.className = 'history-item';
+                const time = new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                item.innerHTML = `
+                    <span>${query}</span>
+                    <span class="timestamp">${time}</span>
+                    <button class="delete-btn" aria-label="Remove bookmark">
+                        <span class="material-icons">delete</span>
+                    </button>
+                `;
+                item.querySelector('span').addEventListener('click', () => {
+                    searchInput.value = query;
+                    performSearch();
+                    historyDrawer.classList.remove('active');
+                });
+                item.querySelector('.delete-btn').addEventListener('click', () => {
+                    const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+                    const index = bookmarks.findIndex(b => b.query === query);
+                    if (index !== -1) bookmarks.splice(index, 1);
+                    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+                    item.remove();
+                    const card = resultsArea.querySelector(`[data-query="${query}"]`);
+                    if (card) {
+                        card.dataset.bookmarked = 'false';
+                        card.querySelector('.bookmark-btn').innerHTML = `
+                            <span class="material-icons">bookmark_border</span>
+                            <span class="tooltip">Bookmark result</span>
+                        `;
+                    }
+                });
+                savedList.prepend(item);
+            });
+        }
+
+        // Show loading spinner
+        function showLoadingSpinner() {
+            let spinner = resultsArea.querySelector('.loading-spinner');
+            if (!spinner) {
+                spinner = document.createElement('div');
+                spinner.className = 'loading-spinner';
+                resultsArea.appendChild(spinner);
+            }
+            spinner.classList.add('active');
+        }
+
+        // Hide loading spinner
+        function hideLoadingSpinner() {
+            const spinner = resultsArea.querySelector('.loading-spinner');
+            if (spinner) spinner.classList.remove('active');
+        }
+
+        // Autocomplete
+        function showAutocomplete(query) {
+            if (!query) {
+                autocompleteDropdown.style.display = 'none';
+                return;
+            }
+            const history = Array.from(historyList.children).map(item => item.querySelector('span').textContent);
+            const suggestions = [...new Set([...history, ...nova.relatedQueries[nova.context.currentTopic || 'tech'] || []])]
+                .filter(q => q.toLowerCase().includes(query.toLowerCase()))
+                .slice(0, 5);
+            autocompleteDropdown.innerHTML = suggestions.map((s, i) => `
+                <div class="autocomplete-item ${i === 0 ? 'selected' : ''}" data-query="${s}">${s}</div>
+            `).join('');
+            autocompleteDropdown.style.display = suggestions.length ? 'block' : 'none';
+        }
+
+        // Handle autocomplete selection
+        function handleAutocompleteSelection() {
+            const selected = autocompleteDropdown.querySelector('.selected');
+            if (selected) {
+                searchInput.value = selected.dataset.query;
+                performSearch();
+            }
+        }
+
+        // Handle search
+        function performSearch() {
+            const query = searchInput.value.trim();
+            if (query) {
+                showLoadingSpinner();
+                setTimeout(() => {
+                    const response = nova.processQuery(query);
+                    hideLoadingSpinner();
+                    appendResult(query, response);
+                    searchInput.value = '';
+                    clearInput.style.display = 'none';
+                    autocompleteDropdown.style.display = 'none';
+                }, 400);
+            }
+        }
+
+        // Filter results
+        function filterResults(filter) {
+            const cards = resultsArea.querySelectorAll('.result-card');
+            cards.forEach(card => {
+                const timestamp = parseInt(card.dataset.timestamp);
+                const isBookmarked = card.dataset.bookmarked === 'true';
+                card.style.display = filter === 'all' ? 'block' :
+                    filter === 'recent' ? (Date.now() - timestamp < 24 * 60 * 60 * 1000 ? 'block' : 'none') :
+                    filter === 'bookmarked' ? (isBookmarked ? 'block' : 'none') : 'block';
+            });
+        }
+
+        // Event listeners
+        searchBtn.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                if (autocompleteDropdown.style.display === 'block') {
+                    handleAutocompleteSelection();
+                } else {
+                    performSearch();
+                }
+            }
+        });
+        searchInput.addEventListener('input', debounce(() => {
+            showAutocomplete(searchInput.value);
+            clearInput.style.display = searchInput.value ? 'block' : 'none';
+        }, 100));
+        searchInput.addEventListener('keydown', (e) => {
+            const items = autocompleteDropdown.querySelectorAll('.autocomplete-item');
+            if (!items.length) return;
+            const selected = autocompleteDropdown.querySelector('.selected');
+            let index = selected ? Array.from(items).indexOf(selected) : -1;
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                index = Math.min(index + 1, items.length - 1);
+                items.forEach(item => item.classList.remove('selected'));
+                items[index].classList.add('selected');
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                index = Math.max(index - 1, 0);
+                items.forEach(item => item.classList.remove('selected'));
+                items[index].classList.add('selected');
+            } else if (e.key === 'Escape') {
+                autocompleteDropdown.style.display = 'none';
+            }
+        });
+        clearInput.addEventListener('click', () => {
+            searchInput.value = '';
+            clearInput.style.display = 'none';
+            autocompleteDropdown.style.display = 'none';
+            searchInput.focus();
+        });
+        historyToggle.addEventListener('click', () => {
+            historyDrawer.classList.toggle('active');
+        });
+        filterBar.addEventListener('click', (e) => {
+            if (e.target.classList.contains('filter-btn')) {
+                filterBar.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                filterResults(e.target.dataset.filter);
+            }
+        });
+        document.querySelector('.history-tabs').addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab-btn')) {
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.history-list, .saved-list').forEach(list => list.classList.remove('active'));
+                e.target.classList.add('active');
+                document.getElementById(`${e.target.dataset.tab}-list`).classList.add('active');
+            }
+        });
+
+        // Swipe gestures for history drawer
+        let touchStartX = 0;
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+        document.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            if (touchStartX - touchEndX > 50 && !historyDrawer.classList.contains('active')) {
+                historyDrawer.classList.add('active');
+            } else if (touchEndX - touchStartX >50 && historyDrawer.classList.contains('active')) {
+                historyDrawer.classList.remove('active');
+            }
+        });
+
+        // Debounce utility
+        function debounce(func, wait) {
+            let timeout;
+            return function (...args) {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, args), wait);
+            };
+        }
+
+        // Initial message
+        window.addEventListener('load', () => {
+            const initialCard = document.createElement('div');
+            initialCard.className = 'result-card';
+            initialCard.dataset.query = 'Welcome';
+            initialCard.dataset.timestamp = Date.now();
+            initialCard.innerHTML = `
+                <div class="result-meta">
+                    <span class="topic-tag">Welcome</span>
+                </div>
+                <h2 aria-expanded="true">
+                    <span class="material-icons">expand_more</span>
+                    Welcome to Nova Search AI
+                </h2>
+                <div class="result-content">
+                    <p>Explore any topic, from AI to history. Try searches like "Why is sleep important?" or "What is war?" for rich, context-aware answers.</p>
+                    <div class="suggestions-section">
+                        <h3><span class="material-icons">lightbulb</span> Try These</h3>
+                        <div class="suggestion-chips">
+                            <a href="#" class="suggestion-chip" tabindex="0">How does AI work?</a>
+                            <a href="#" class="suggestion-chip" tabindex="0">What causes climate change?</a>
+                            <a href="#" class="suggestion-chip" tabindex="0">What is philosophy?</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            resultsArea.appendChild(initialCard);
+            initialCard.querySelectorAll('.suggestion-chip').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    searchInput.value = link.textContent;
+                    performSearch();
+                });
+                link.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        searchInput.value = link.textContent;
+                        performSearch();
+                    }
+                });
+            });
+
+            // Load saved bookmarks
+            updateSavedList();
+        });
+    </script>
+</body>
+</html>
