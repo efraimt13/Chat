@@ -1,0 +1,2568 @@
+{
+  "facts": [
+    {
+      "id": 1,
+      "topic": "ai/nlp",
+      "text": "Natural language processing enables machines to understand text.",
+      "keywords": ["nlp", "ai", "text-process", "languag"],
+      "metadata": {
+        "subtopics": ["machine-learning", "nlp", "text-analysis"],
+        "updatedAt": "2025-04-15T10:00:00Z",
+        "source": "arXiv:2025.12345",
+        "category": "ai",
+        "priority": 0.9
+      },
+      "relations": {
+        "relatedFacts": [2, 3, 8],
+        "relatedTopics": ["ai/deep-learning", "ai/ethics"]
+      },
+      "embedding": [0.12, 0.05, -0.03, 0.08, 0.0, 0.15, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 2,
+      "topic": "ai/deep-learning",
+      "text": "Deep learning uses neural networks for pattern recognition.",
+      "keywords": ["deep-learn", "neural-network", "ai"],
+      "metadata": {
+        "subtopics": ["machine-learning", "neural-networks"],
+        "updatedAt": "2025-03-20T14:30:00Z",
+        "source": "https://deepmind.com/research",
+        "category": "ai",
+        "priority": 0.85
+      },
+      "relations": {
+        "relatedFacts": [1, 3, 16],
+        "relatedTopics": ["ai/nlp", "ai/ethics"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 3,
+      "topic": "ai/ethics",
+      "text": "AI ethics ensures fairness and transparency in algorithms.",
+      "keywords": ["ai", "ethic", "fair", "transpar"],
+      "metadata": {
+        "subtopics": ["ethics", "ai-governance"],
+        "updatedAt": "2025-05-01T09:15:00Z",
+        "source": "https://aiethics.org",
+        "category": "ai",
+        "priority": 0.8
+      },
+      "relations": {
+        "relatedFacts": [1, 2, 17],
+        "relatedTopics": ["ai/nlp", "ai/deep-learning"]
+      },
+      "embedding": [0.07, 0.03, -0.01, 0.06, 0.0, 0.10, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 4,
+      "topic": "quantum-tech/qubits",
+      "text": "Qubits enable quantum computers to process data exponentially.",
+      "keywords": ["qubit", "quantum-comput", "superposit"],
+      "metadata": {
+        "subtopics": ["quantum-computing", "superposition"],
+        "updatedAt": "2025-02-28T11:20:00Z",
+        "source": "https://quantum.gov",
+        "category": "quantum-tech",
+        "priority": 0.87
+      },
+      "relations": {
+        "relatedFacts": [5, 18],
+        "relatedTopics": ["quantum-tech/entanglement"]
+      },
+      "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 5,
+      "topic": "quantum-tech/entanglement",
+      "text": "Quantum entanglement links particles for instant correlations.",
+      "keywords": ["entangl", "quantum-comput", "quantum"],
+      "metadata": {
+        "subtopics": ["quantum-computing", "entanglement"],
+        "updatedAt": "2025-01-10T16:45:00Z",
+        "source": "arXiv:2024.98765",
+        "category": "quantum-tech",
+        "priority": 0.82
+      },
+      "relations": {
+        "relatedFacts": [4, 19],
+        "relatedTopics": ["quantum-tech/qubits"]
+      },
+      "embedding": [0.06, 0.03, -0.01, 0.05, 0.0, 0.09, -0.02, 0.04, 0.08, -0.03, 0.02, 0.01, -0.01, 0.04, 0.0, 0.06, -0.02, 0.03, 0.05, -0.02, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 6,
+      "topic": "blockchain/ledger",
+      "text": "Blockchain ledgers ensure secure, immutable transaction records.",
+      "keywords": ["blockchain", "ledg", "cryptocurr"],
+      "metadata": {
+        "subtopics": ["blockchain", "decentralized"],
+        "updatedAt": "2025-04-10T12:00:00Z",
+        "source": "https://ethereum.org",
+        "category": "blockchain",
+        "priority": 0.88
+      },
+      "relations": {
+        "relatedFacts": [7, 12],
+        "relatedTopics": ["blockchain/cryptocurrency"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.14, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 7,
+      "topic": "blockchain/cryptocurrency",
+      "text": "Cryptocurrencies use blockchain for decentralized payments.",
+      "keywords": ["cryptocurr", "blockchain", "bitcoin"],
+      "metadata": {
+        "subtopics": ["blockchain", "decentralized"],
+        "updatedAt": "2025-03-15T08:30:00Z",
+        "source": "https://bitcoin.org",
+        "category": "blockchain",
+        "priority": 0.83
+      },
+      "relations": {
+        "relatedFacts": [6, 20],
+        "relatedTopics": ["blockchain/ledger"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 8,
+      "topic": "health/wearables",
+      "text": "Wearable tech monitors heart rate and activity in real time.",
+      "keywords": ["wearabl", "health", "fit"],
+      "metadata": {
+        "subtopics": ["wearable-tech", "health-monitoring"],
+        "updatedAt": "2025-05-10T13:00:00Z",
+        "source": "https://healthtech.org",
+        "category": "health",
+        "priority": 0.85
+      },
+      "relations": {
+        "relatedFacts": [9, 1],
+        "relatedTopics": ["health/nutrition"]
+      },
+      "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 9,
+      "topic": "health/nutrition",
+      "text": "Balanced nutrition boosts immunity and energy levels.",
+      "keywords": ["nutrit", "health", "diet"],
+      "metadata": {
+        "subtopics": ["nutrition", "wellness"],
+        "updatedAt": "2025-04-20T10:00:00Z",
+        "source": "https://nutrition.org",
+        "category": "health",
+        "priority": 0.8
+      },
+      "relations": {
+        "relatedFacts": [8, 21],
+        "relatedTopics": ["health/wearables"]
+      },
+      "embedding": [0.07, 0.03, -0.01, 0.06, 0.0, 0.10, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 10,
+      "topic": "environment/sustainability",
+      "text": "Sustainable practices reduce carbon footprints effectively.",
+      "keywords": ["sustain", "environ", "carbon"],
+      "metadata": {
+        "subtopics": ["sustainability", "climate"],
+        "updatedAt": "2025-05-05T11:30:00Z",
+        "source": "https://un.org/sustainability",
+        "category": "environment",
+        "priority": 0.86
+      },
+      "relations": {
+        "relatedFacts": [11, 22],
+        "relatedTopics": ["environment/climate"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 11,
+      "topic": "environment/climate",
+      "text": "Climate change impacts ecosystems and weather patterns.",
+      "keywords": ["climat", "environ", "ecosystem"],
+      "metadata": {
+        "subtopics": ["climate", "ecology"],
+        "updatedAt": "2025-04-25T15:00:00Z",
+        "source": "https://ipcc.ch",
+        "category": "environment",
+        "priority": 0.81
+      },
+      "relations": {
+        "relatedFacts": [10, 23],
+        "relatedTopics": ["environment/sustainability"]
+      },
+      "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 12,
+      "topic": "data-security/cryptography",
+      "text": "Cryptography secures data with encryption techniques.",
+      "keywords": ["cryptograph", "data-secur", "encrypt"],
+      "metadata": {
+      "subtopics": ["data-security", "encryption"],
+      "updatedAt": "2025-03-30T09:45:00Z",
+      "source": "https://nist.gov/cryptography",
+      "category": "data-security",
+      "priority": 0.84
+      },
+      "relations": {
+      "relatedFacts": [6, 13],
+      "relatedTopics": ["data-security/zero-trust"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 13,
+      "topic": "space-exploration/mars",
+      "text": "Mars exploration aims to uncover signs of past life.",
+      "keywords": ["mars", "space", "explor"],
+      "metadata": {
+      "subtopics": ["space-exploration", "astrobiology"],
+      "updatedAt": "2025-06-01T14:00:00Z",
+      "source": "https://nasa.gov/mars",
+      "category": "space-exploration",
+      "priority": 0.9
+      },
+      "relations": {
+      "relatedFacts": [14, 15],
+      "relatedTopics": ["space-exploration/moon"]
+      },
+      "embedding": [0.08, 0.03, -0.01, 0.06, 0.0, 0.11, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 14,
+      "topic": "space-exploration/moon",
+      "text": "Lunar missions focus on resource utilization and habitation.",
+      "keywords": ["moon", "space", "lunar"],
+      "metadata": {
+      "subtopics": ["space-exploration", "lunar-research"],
+      "updatedAt": "2025-05-25T10:30:00Z",
+      "source": "https://esa.int/moon",
+      "category": "space-exploration",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [13, 16],
+      "relatedTopics": ["space-exploration/mars"]
+      },
+      "embedding": [0.07, 0.03, -0.01, 0.06, 0.0, 0.10, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 15,
+      "topic": "education/online-learning",
+      "text": "Online learning platforms provide flexible education options.",
+      "keywords": ["online-learn", "educ", "platform"],
+      "metadata": {
+      "subtopics": ["education", "e-learning"],
+      "updatedAt": "2025-04-15T08:00:00Z",
+      "source": "https://coursera.org",
+      "category": "education",
+      "priority": 0.85
+      },
+      "relations": {
+      "relatedFacts": [16, 17],
+      "relatedTopics": ["education/edtech"]
+      },
+      "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 16,
+      "topic": "education/edtech",
+      "text": "EdTech enhances learning with technology tools and platforms.",
+      "keywords": ["edtech", "educ", "tech"],
+      "metadata": {
+      "subtopics": ["education", "technology"],
+      "updatedAt": "2025-05-10T12:30:00Z",
+      "source": "https://edtechreview.in/",
+      "category": "education",
+      "priority": 0.82
+      },
+      "relations": {
+      "relatedFacts": [2, 15],
+      "relatedTopics": ["education/online-learning", "ai/deep-learning"]
+      },
+      "embedding": [0.09, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 17,
+      "topic": "biotech/genetics",
+      "text": "Genetic engineering modifies organisms for specific traits.",
+      "keywords": ["genet", "biotech", "dna"],
+      "metadata": {
+      "subtopics": ["genetics", "bioengineering"],
+      "updatedAt": "2025-03-01T16:00:00Z",
+      "source": "https://ncbi.nlm.nih.gov/pubmed/",
+      "category": "biotech",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [3, 15],
+      "relatedTopics": ["ai/ethics", "education/edtech"]
+      },
+      "embedding": [0.10, 0.06, -0.04, 0.09, 0.01, 0.13, -0.03, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+      },
+    
+    {
+      "id": 18,
+      "topic": "robotics/automation",
+      "text": "Automation enhances efficiency and productivity in industries.",
+      "keywords": ["automat", "robot", "industri"],
+      "metadata": {
+      "subtopics": ["robotics", "manufacturing"],
+      "updatedAt": "2025-02-15T14:45:00Z",
+      "source": "https://www.robotics.org/",
+      "category": "robotics",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [4, 19],
+      "relatedTopics": ["quantum-tech/qubits"]
+      },
+      "embedding": [0.07, 0.03, -0.01, 0.06, 0.0, 0.10, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 19,
+      "topic": "cybersecurity/threat-detection",
+      "text": "Advanced threat detection identifies and mitigates cyber threats.",
+      "keywords": ["threat", "cybersecur", "detect"],
+      "metadata": {
+      "subtopics": ["cybersecurity", "network-security"],
+      "updatedAt": "2025-04-01T11:15:00Z",
+      "source": "https://www.sans.org/",
+      "category": "cybersecurity",
+      "priority": 0.91
+      },
+      "relations": {
+      "relatedFacts": [5, 18],
+      "relatedTopics": ["quantum-tech/entanglement"]
+      },
+      "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 20,
+      "topic": "renewable-energy/solar",
+      "text": "Solar energy converts sunlight into electricity efficiently.",
+      "keywords": ["solar", "renew", "energi"],
+      "metadata": {
+      "subtopics": ["renewable-energy", "clean-energy"],
+      "updatedAt": "2025-05-15T09:00:00Z",
+      "source": "https://www.irena.org/",
+      "category": "renewable-energy",
+      "priority": 0.84
+      },
+      "relations": {
+      "relatedFacts": [7, 21],
+      "relatedTopics": ["blockchain/cryptocurrency"]
+      },
+      "embedding": [0.09, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 21,
+      "topic": "agritech/precision-farming",
+      "text": "Precision farming uses data to optimize agricultural yields.",
+      "keywords": ["agritech", "farm", "data"],
+      "metadata": {
+      "subtopics": ["agriculture", "technology"],
+      "updatedAt": "2025-03-20T10:15:00Z",
+      "source": "https://www.precisionag.com/",
+      "category": "agritech",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [9, 20],
+      "relatedTopics": ["health/nutrition"]
+      },
+      "embedding": [0.10, 0.06, -0.04, 0.09, 0.01, 0.13, -0.03, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+      },
+    
+    {
+      "id": 22,
+      "topic": "urban-planning/smart-cities",
+      "text": "Smart cities use technology to improve urban living.",
+      "keywords": ["urban", "smart-citi", "tech"],
+      "metadata": {
+      "subtopics": ["urban-planning", "technology"],
+      "updatedAt": "2025-04-28T13:30:00Z",
+      "source": "https://www.smartcitiescouncil.com/",
+      "category": "urban-planning",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [10, 23],
+      "relatedTopics": ["environment/sustainability"]
+      },
+      "embedding": [0.07, 0.03, -0.01, 0.06, 0.0, 0.10, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 23,
+      "topic": "oceanography/marine-conservation",
+      "text": "Marine conservation protects ocean ecosystems and biodiversity.",
+      "keywords": ["marin", "ocean", "conserv"],
+      "metadata": {
+      "subtopics": ["oceanography", "conservation"],
+      "updatedAt": "2025-05-02T15:45:00Z",
+      "source": "https://oceanconservancy.org/",
+      "category": "oceanography",
+      "priority": 0.90
+      },
+      "relations": {
+      "relatedFacts": [11, 22],
+      "relatedTopics": ["environment/climate"]
+      },
+      "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 24,
+      "topic": "transportation/electric-vehicles",
+      "text": "Electric vehicles reduce emissions and promote clean transportation.",
+      "keywords": ["electric-vehicle", "transport", "emission"],
+      "metadata": {
+      "subtopics": ["electric-vehicles", "clean-transport"],
+      "updatedAt": "2025-06-10T10:00:00Z",
+      "source": "https://ev-volumes.com/",
+      "category": "transportation",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [10, 20],
+      "relatedTopics": ["renewable-energy/solar"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 25,
+      "topic": "psychology/cognitive-bias",
+      "text": "Cognitive biases affect decision-making and perception.",
+      "keywords": ["cognit", "bias", "psycholog"],
+      "metadata": {
+      "subtopics": ["cognitive-bias", "decision-making"],
+      "updatedAt": "2025-06-12T09:30:00Z",
+      "source": "https://www.behavioraleconomics.com/",
+      "category": "psychology",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [3, 15],
+      "relatedTopics": ["ai/ethics", "education/online-learning"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 26,
+      "topic": "sports/analytics",
+      "text": "Sports analytics uses data to improve team performance and strategy.",
+      "keywords": ["sport", "analyt", "data"],
+      "metadata": {
+      "subtopics": ["sports", "analytics"],
+      "updatedAt": "2025-06-13T11:00:00Z",
+      "source": "https://www.sloanreview.mit.edu/sports-analytics/",
+      "category": "sports",
+      "priority": 0.85
+      },
+      "relations": {
+      "relatedFacts": [8, 21],
+      "relatedTopics": ["health/wearables", "agritech/precision-farming"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 27,
+      "topic": "finance/investment",
+      "text": "Investment strategies vary based on risk tolerance and goals.",
+      "keywords": ["financ", "invest", "market"],
+      "metadata": {
+      "subtopics": ["investment", "financial-planning"],
+      "updatedAt": "2025-06-15T14:00:00Z",
+      "source": "https://www.investor.gov/",
+      "category": "finance",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [7, 25],
+      "relatedTopics": ["blockchain/cryptocurrency", "psychology/cognitive-bias"]
+      },
+      "embedding": [0.11, 0.05, -0.02, 0.08, 0.01, 0.14, -0.03, 0.07, 0.12, -0.06, 0.04, 0.03, -0.01, 0.06, 0.01, 0.10, -0.03, 0.05, 0.09, -0.04, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+      },
+    
+    {
+      "id": 28,
+      "topic": "cooking/molecular-gastronomy",
+      "text": "Molecular gastronomy applies science to cooking techniques.",
+      "keywords": ["cook", "molecul", "scienc"],
+      "metadata": {
+      "subtopics": ["cooking", "food-science"],
+      "updatedAt": "2025-06-14T10:30:00Z",
+      "source": "https://www.moleculargastronomy.com/",
+      "category": "cooking",
+      "priority": 0.82
+      },
+      "relations": {
+      "relatedFacts": [9, 17],
+      "relatedTopics": ["health/nutrition", "biotech/genetics"]
+      },
+      "embedding": [0.08, 0.03, -0.01, 0.06, 0.0, 0.11, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 29,
+        "topic": "artificial-intelligence/computer-vision",
+        "text": "Computer vision enables machines to interpret visual data.",
+        "keywords": ["ai", "computer-vision", "image-processing"],
+        "metadata": {
+          "subtopics": ["machine-learning", "image-recognition"],
+          "updatedAt": "2025-06-20T12:00:00Z",
+          "source": "https://opencv.org/",
+          "category": "artificial-intelligence",
+          "priority": 0.88
+        },
+        "relations": {
+          "relatedFacts": [1, 2],
+          "relatedTopics": ["ai/nlp", "ai/deep-learning"]
+        },
+        "embedding": [0.09, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 30,
+        "topic": "medicine/telehealth",
+        "text": "Telehealth provides remote healthcare services using technology.",
+        "keywords": ["telehealth", "medicine", "remote-care"],
+        "metadata": {
+          "subtopics": ["healthcare", "technology"],
+          "updatedAt": "2025-06-22T14:30:00Z",
+          "source": "https://www.telehealth.org/",
+          "category": "medicine",
+          "priority": 0.89
+        },
+        "relations": {
+          "relatedFacts": [8, 9],
+          "relatedTopics": ["health/wearables", "health/nutrition"]
+        },
+        "embedding": [0.10, 0.06, -0.04, 0.09, 0.01, 0.13, -0.03, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+      },
+      {
+        "id": 31,
+        "topic": "space-exploration/exoplanets",
+        "text": "Exoplanet research explores planets outside our solar system.",
+        "keywords": ["space", "exoplanet", "astronomy"],
+        "metadata": {
+          "subtopics": ["space-exploration", "planetary-science"],
+          "updatedAt": "2025-06-25T16:00:00Z",
+          "source": "https://exoplanets.nasa.gov/",
+          "category": "space-exploration",
+          "priority": 0.91
+        },
+        "relations": {
+          "relatedFacts": [13, 14],
+          "relatedTopics": ["space-exploration/mars", "space-exploration/moon"]
+        },
+        "embedding": [0.08, 0.03, -0.01, 0.06, 0.0, 0.11, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 32,
+        "topic": "materials-science/nanomaterials",
+        "text": "Nanomaterials exhibit unique properties at the nanoscale.",
+        "keywords": ["materials-science", "nanomaterials", "nanotechnology"],
+        "metadata": {
+          "subtopics": ["materials-science", "nanotechnology"],
+          "updatedAt": "2025-06-28T10:00:00Z",
+          "source": "https://www.nano.gov/",
+          "category": "materials-science",
+          "priority": 0.90
+        },
+        "relations": {
+          "relatedFacts": [17, 18],
+          "relatedTopics": ["biotech/genetics", "robotics/automation"]
+        },
+        "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 33,
+        "topic": "linguistics/phonetics",
+        "text": "Phonetics studies the physical sounds of human speech.",
+        "keywords": ["linguistics", "phonetics", "speech"],
+        "metadata": {
+          "subtopics": ["linguistics", "speech-science"],
+          "updatedAt": "2025-07-01T09:00:00Z",
+          "source": "https://www.internationalphoneticassociation.org/",
+          "category": "linguistics",
+          "priority": 0.83
+        },
+        "relations": {
+          "relatedFacts": [1, 29],
+          "relatedTopics": ["ai/nlp", "artificial-intelligence/computer-vision"]
+        },
+        "embedding": [0.07, 0.03, -0.01, 0.06, 0.0, 0.10, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 34,
+        "topic": "philosophy/logic",
+        "text": "Logic is the study of valid reasoning and argument.",
+        "keywords": ["philosophy", "logic", "reasoning"],
+        "metadata": {
+          "subtopics": ["philosophy", "critical-thinking"],
+          "updatedAt": "2025-07-02T11:30:00Z",
+          "source": "https://plato.stanford.edu/entries/logic-classical/",
+          "category": "philosophy",
+          "priority": 0.84
+        },
+        "relations": {
+          "relatedFacts": [25, 27],
+          "relatedTopics": ["psychology/cognitive-bias", "finance/investment"]
+        },
+        "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 35,
+        "topic": "music/theory",
+        "text": "Music theory explains the structure and elements of music.",
+        "keywords": ["music", "theory", "composition"],
+        "metadata": {
+          "subtopics": ["music", "composition"],
+          "updatedAt": "2025-07-03T13:00:00Z",
+          "source": "https://www.musictheory.net/",
+          "category": "music",
+          "priority": 0.82
+        },
+        "relations": {
+          "relatedFacts": [26, 34],
+          "relatedTopics": ["sports/analytics", "philosophy/logic"]
+        },
+        "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 36,
+        "topic": "history/archaeology",
+        "text": "Archaeology uncovers human history through material remains.",
+        "keywords": ["history", "archaeology", "excavation"],
+        "metadata": {
+          "subtopics": ["history", "anthropology"],
+          "updatedAt": "2025-07-04T15:00:00Z",
+          "source": "https://www.archaeological.org/",
+          "category": "history",
+          "priority": 0.85
+        },
+        "relations": {
+          "relatedFacts": [23, 31],
+          "relatedTopics": ["oceanography/marine-conservation", "space-exploration/exoplanets"]
+        },
+        "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 37,
+        "topic": "mathematics/number-theory",
+        "text": "Number theory explores properties of integers and prime numbers.",
+        "keywords": ["mathematics", "number-theory", "prime"],
+        "metadata": {
+          "subtopics": ["mathematics", "theory"],
+          "updatedAt": "2025-07-05T10:30:00Z",
+          "source": "https://www.ams.org/",
+          "category": "mathematics",
+          "priority": 0.87
+        },
+        "relations": {
+          "relatedFacts": [12, 34],
+          "relatedTopics": ["data-security/cryptography", "philosophy/logic"]
+        },
+        "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 38,
+        "topic": "law/intellectual-property",
+        "text": "Intellectual property law protects creations of the mind.",
+        "keywords": ["law", "intellectual-property", "patent"],
+        "metadata": {
+          "subtopics": ["law", "innovation"],
+          "updatedAt": "2025-07-06T12:00:00Z",
+          "source": "https://www.wipo.int/",
+          "category": "law",
+          "priority": 0.86
+        },
+        "relations": {
+          "relatedFacts": [27, 32],
+          "relatedTopics": ["finance/investment", "materials-science/nanomaterials"]
+        },
+        "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 39,
+        "topic": "fashion/sustainable-design",
+        "text": "Sustainable fashion design reduces environmental impact.",
+        "keywords": ["fashion", "sustainable", "design"],
+        "metadata": {
+          "subtopics": ["fashion", "sustainability"],
+          "updatedAt": "2025-07-07T14:00:00Z",
+          "source": "https://www.sustainablefashionacademy.org/",
+          "category": "fashion",
+          "priority": 0.84
+        },
+        "relations": {
+          "relatedFacts": [10, 22],
+          "relatedTopics": ["environment/sustainability", "urban-planning/smart-cities"]
+        },
+        "embedding": [0.08, 0.04, -0.02, 0.07, 0.0, 0.11, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "id": 40,
+        "topic": "gaming/game-design",
+        "text": "Game design blends storytelling, mechanics, and user experience.",
+        "keywords": ["gaming", "game-design", "storytelling"],
+        "metadata": {
+          "subtopics": ["gaming", "design"],
+          "updatedAt": "2025-07-08T16:00:00Z",
+          "source": "https://www.gamasutra.com/",
+          "category": "gaming",
+          "priority": 0.85
+        },
+        "relations": {
+          "relatedFacts": [15, 35],
+          "relatedTopics": ["education/online-learning", "music/theory"]
+        },
+        "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      }
+    ,
+    {
+      "id": 41,
+      "topic": "food-science/fermentation",
+      "text": "Fermentation transforms food through microbial activity.",
+      "keywords": ["fermentation", "microbes", "food-science"],
+      "metadata": {
+        "subtopics": ["food-science", "microbiology"],
+        "updatedAt": "2025-07-09T10:00:00Z",
+        "source": "https://www.ifst.org/fermentation",
+        "category": "food-science",
+        "priority": 0.83
+      },
+      "relations": {
+        "relatedFacts": [28, 9],
+        "relatedTopics": ["cooking/molecular-gastronomy", "health/nutrition"]
+      },
+      "embedding": [0.08, 0.03, -0.01, 0.06, 0.0, 0.11, -0.02, 0.05, 0.09, -0.04, 0.02, 0.01, -0.01, 0.04, 0.0, 0.07, -0.02, 0.03, 0.06, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 42,
+      "topic": "climate-engineering/geoengineering",
+      "text": "Geoengineering proposes large-scale interventions to combat climate change.",
+      "keywords": ["geoengineering", "climate", "environment"],
+      "metadata": {
+        "subtopics": ["climate-engineering", "environment"],
+        "updatedAt": "2025-07-09T11:00:00Z",
+        "source": "https://www.geoengineeringmonitor.org/",
+        "category": "climate-engineering",
+        "priority": 0.86
+      },
+      "relations": {
+        "relatedFacts": [10, 11],
+        "relatedTopics": ["environment/climate", "environment/sustainability"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 43,
+      "topic": "energy/hydrogen",
+      "text": "Hydrogen energy offers a clean alternative for fuel and storage.",
+      "keywords": ["hydrogen", "energy", "fuel"],
+      "metadata": {
+        "subtopics": ["energy", "clean-energy"],
+        "updatedAt": "2025-07-09T12:00:00Z",
+        "source": "https://www.hydrogen.energy.gov/",
+        "category": "energy",
+        "priority": 0.87
+      },
+      "relations": {
+        "relatedFacts": [20, 24],
+        "relatedTopics": ["renewable-energy/solar", "transportation/electric-vehicles"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 44,
+      "topic": "psychology/neuroscience",
+      "text": "Neuroscience studies the structure and function of the nervous system.",
+      "keywords": ["neuroscience", "brain", "psychology"],
+      "metadata": {
+        "subtopics": ["psychology", "biology"],
+        "updatedAt": "2025-07-09T13:00:00Z",
+        "source": "https://www.sfn.org/",
+        "category": "psychology",
+        "priority": 0.88
+      },
+      "relations": {
+        "relatedFacts": [25, 17],
+        "relatedTopics": ["psychology/cognitive-bias", "biotech/genetics"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 45,
+      "topic": "robotics/humanoid",
+      "text": "Humanoid robots are designed to mimic human movement and interaction.",
+      "keywords": ["robotics", "humanoid", "ai"],
+      "metadata": {
+        "subtopics": ["robotics", "artificial-intelligence"],
+        "updatedAt": "2025-07-09T14:00:00Z",
+        "source": "https://www.humanoids2025.org/",
+        "category": "robotics",
+        "priority": 0.87
+      },
+      "relations": {
+        "relatedFacts": [18, 29],
+        "relatedTopics": ["robotics/automation", "artificial-intelligence/computer-vision"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 46,
+      "topic": "finance/cryptography-in-finance",
+      "text": "Cryptography secures financial transactions and digital assets.",
+      "keywords": ["finance", "cryptography", "security"],
+      "metadata": {
+        "subtopics": ["finance", "data-security"],
+        "updatedAt": "2025-07-09T15:00:00Z",
+        "source": "https://www.finextra.com/cryptography",
+        "category": "finance",
+        "priority": 0.86
+      },
+      "relations": {
+        "relatedFacts": [6, 27],
+        "relatedTopics": ["blockchain/ledger", "finance/investment"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 47,
+      "topic": "transportation/hyperloop",
+      "text": "Hyperloop technology aims for ultra-fast ground transportation.",
+      "keywords": ["hyperloop", "transportation", "innovation"],
+      "metadata": {
+        "subtopics": ["transportation", "technology"],
+        "updatedAt": "2025-07-09T16:00:00Z",
+        "source": "https://www.hyperlooptt.com/",
+        "category": "transportation",
+        "priority": 0.85
+      },
+      "relations": {
+        "relatedFacts": [24, 43],
+        "relatedTopics": ["transportation/electric-vehicles", "energy/hydrogen"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 48,
+      "topic": "medicine/genomics",
+      "text": "Genomics analyzes the complete DNA sequence of organisms.",
+      "keywords": ["genomics", "dna", "medicine"],
+      "metadata": {
+        "subtopics": ["medicine", "genetics"],
+        "updatedAt": "2025-07-09T17:00:00Z",
+        "source": "https://www.genome.gov/",
+        "category": "medicine",
+        "priority": 0.89
+      },
+      "relations": {
+        "relatedFacts": [17, 44],
+        "relatedTopics": ["biotech/genetics", "psychology/neuroscience"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 49,
+      "topic": "media/digital-literacy",
+      "text": "Digital literacy is essential for navigating online information.",
+      "keywords": ["media", "digital-literacy", "education"],
+      "metadata": {
+        "subtopics": ["media", "education"],
+        "updatedAt": "2025-07-09T18:00:00Z",
+        "source": "https://www.medialiteracy.org/",
+        "category": "media",
+        "priority": 0.84
+      },
+      "relations": {
+        "relatedFacts": [15, 16],
+        "relatedTopics": ["education/online-learning", "education/edtech"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 50,
+      "topic": "space-exploration/space-tourism",
+      "text": "Space tourism offers commercial travel beyond Earth's atmosphere.",
+      "keywords": ["space", "tourism", "commercial"],
+      "metadata": {
+        "subtopics": ["space-exploration", "tourism"],
+        "updatedAt": "2025-07-09T19:00:00Z",
+        "source": "https://www.spacetourism.com/",
+        "category": "space-exploration",
+        "priority": 0.85
+      },
+      "relations": {
+        "relatedFacts": [13, 31],
+        "relatedTopics": ["space-exploration/mars", "space-exploration/exoplanets"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 51,
+      "topic": "art/design-thinking",
+      "text": "Design thinking is a creative approach to problem solving.",
+      "keywords": ["design", "thinking", "creativity"],
+      "metadata": {
+        "subtopics": ["art", "innovation"],
+        "updatedAt": "2025-07-09T20:00:00Z",
+        "source": "https://www.ideou.com/pages/design-thinking",
+        "category": "art",
+        "priority": 0.84
+      },
+      "relations": {
+        "relatedFacts": [39, 40],
+        "relatedTopics": ["fashion/sustainable-design", "gaming/game-design"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 52,
+      "topic": "education/learning-sciences",
+      "text": "Learning sciences study how people learn and improve education.",
+      "keywords": ["education", "learning", "science"],
+      "metadata": {
+        "subtopics": ["education", "cognitive-science"],
+        "updatedAt": "2025-07-09T21:00:00Z",
+        "source": "https://www.isls.org/",
+        "category": "education",
+        "priority": 0.86
+      },
+      "relations": {
+        "relatedFacts": [15, 25],
+        "relatedTopics": ["education/online-learning", "psychology/cognitive-bias"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 53,
+      "topic": "biology/synthetic-biology",
+      "text": "Synthetic biology designs and constructs new biological parts.",
+      "keywords": ["biology", "synthetic-biology", "engineering"],
+      "metadata": {
+        "subtopics": ["biology", "engineering"],
+        "updatedAt": "2025-07-09T22:00:00Z",
+        "source": "https://www.syntheticbiology.org/",
+        "category": "biology",
+        "priority": 0.88
+      },
+      "relations": {
+        "relatedFacts": [17, 48],
+        "relatedTopics": ["biotech/genetics", "medicine/genomics"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 54,
+      "topic": "chemistry/green-chemistry",
+      "text": "Green chemistry develops processes that reduce environmental harm.",
+      "keywords": ["chemistry", "green-chemistry", "sustainability"],
+      "metadata": {
+        "subtopics": ["chemistry", "environment"],
+        "updatedAt": "2025-07-09T23:00:00Z",
+        "source": "https://www.acs.org/greenchemistry",
+        "category": "chemistry",
+        "priority": 0.85
+      },
+      "relations": {
+        "relatedFacts": [10, 42],
+        "relatedTopics": ["environment/sustainability", "climate-engineering/geoengineering"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 55,
+      "topic": "cybersecurity/privacy",
+      "text": "Privacy in cybersecurity protects user data from unauthorized access.",
+      "keywords": ["cybersecurity", "privacy", "data"],
+      "metadata": {
+      "subtopics": ["cybersecurity", "data-security"],
+      "updatedAt": "2025-07-10T00:00:00Z",
+      "source": "https://www.privacy.org/",
+      "category": "cybersecurity",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [12, 19],
+      "relatedTopics": ["data-security/cryptography", "cybersecurity/threat-detection"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 56,
+      "topic": "agriculture/hydroponics",
+      "text": "Hydroponics grows plants without soil using nutrient-rich water.",
+      "keywords": ["agriculture", "hydroponics", "plants"],
+      "metadata": {
+      "subtopics": ["agriculture", "sustainable-farming"],
+      "updatedAt": "2025-07-10T01:00:00Z",
+      "source": "https://www.hydroponics.com/",
+      "category": "agriculture",
+      "priority": 0.85
+      },
+      "relations": {
+      "relatedFacts": [21, 10],
+      "relatedTopics": ["agritech/precision-farming", "environment/sustainability"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 57,
+      "topic": "transportation/drone-delivery",
+      "text": "Drone delivery systems transport goods quickly and autonomously.",
+      "keywords": ["drone", "delivery", "transportation"],
+      "metadata": {
+      "subtopics": ["transportation", "automation"],
+      "updatedAt": "2025-07-10T02:00:00Z",
+      "source": "https://www.dronedeliverycanada.com/",
+      "category": "transportation",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [18, 47],
+      "relatedTopics": ["robotics/automation", "transportation/hyperloop"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 58,
+      "topic": "finance/decentralized-finance",
+      "text": "Decentralized finance (DeFi) enables peer-to-peer financial services.",
+      "keywords": ["finance", "defi", "blockchain"],
+      "metadata": {
+      "subtopics": ["finance", "blockchain"],
+      "updatedAt": "2025-07-10T03:00:00Z",
+      "source": "https://www.defipulse.com/",
+      "category": "finance",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [6, 46],
+      "relatedTopics": ["blockchain/ledger", "finance/cryptography-in-finance"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 59,
+      "topic": "medicine/immunotherapy",
+      "text": "Immunotherapy boosts the immune system to fight diseases.",
+      "keywords": ["medicine", "immunotherapy", "immune-system"],
+      "metadata": {
+      "subtopics": ["medicine", "immunology"],
+      "updatedAt": "2025-07-10T04:00:00Z",
+      "source": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy",
+      "category": "medicine",
+      "priority": 0.91
+      },
+      "relations": {
+      "relatedFacts": [48, 9],
+      "relatedTopics": ["medicine/genomics", "health/nutrition"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 60,
+      "topic": "space-exploration/asteroid-mining",
+      "text": "Asteroid mining extracts valuable resources from space rocks.",
+      "keywords": ["space", "asteroid", "mining"],
+      "metadata": {
+      "subtopics": ["space-exploration", "mining"],
+      "updatedAt": "2025-07-10T05:00:00Z",
+      "source": "https://www.asteroidmining.com/",
+      "category": "space-exploration",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [13, 31],
+      "relatedTopics": ["space-exploration/mars", "space-exploration/exoplanets"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 61,
+      "topic": "art/ai-generated-art",
+      "text": "AI-generated art uses algorithms to create visual or audio works.",
+      "keywords": ["art", "ai", "creativity"],
+      "metadata": {
+      "subtopics": ["art", "artificial-intelligence"],
+      "updatedAt": "2025-07-10T06:00:00Z",
+      "source": "https://www.aiartonline.com/",
+      "category": "art",
+      "priority": 0.84
+      },
+      "relations": {
+      "relatedFacts": [29, 51],
+      "relatedTopics": ["artificial-intelligence/computer-vision", "art/design-thinking"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 62,
+      "topic": "psychology/positive-psychology",
+      "text": "Positive psychology studies strengths and factors that enable well-being.",
+      "keywords": ["psychology", "well-being", "positive-psychology"],
+      "metadata": {
+      "subtopics": ["psychology", "well-being"],
+      "updatedAt": "2025-07-10T07:00:00Z",
+      "source": "https://www.positivepsychology.com/",
+      "category": "psychology",
+      "priority": 0.85
+      },
+      "relations": {
+      "relatedFacts": [25, 44],
+      "relatedTopics": ["psychology/cognitive-bias", "psychology/neuroscience"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 63,
+      "topic": "environment/biodiversity",
+      "text": "Biodiversity ensures ecosystem resilience and adaptability.",
+      "keywords": ["environment", "biodiversity", "ecosystem"],
+      "metadata": {
+      "subtopics": ["environment", "ecology"],
+      "updatedAt": "2025-07-10T08:00:00Z",
+      "source": "https://www.cbd.int/",
+      "category": "environment",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [23, 10],
+      "relatedTopics": ["oceanography/marine-conservation", "environment/sustainability"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 64,
+      "topic": "chemistry/materials-discovery",
+      "text": "Materials discovery accelerates innovation in chemistry and engineering.",
+      "keywords": ["chemistry", "materials", "discovery"],
+      "metadata": {
+      "subtopics": ["chemistry", "materials-science"],
+      "updatedAt": "2025-07-10T09:00:00Z",
+      "source": "https://www.materialsproject.org/",
+      "category": "chemistry",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [32, 54],
+      "relatedTopics": ["materials-science/nanomaterials", "chemistry/green-chemistry"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 65,
+      "topic": "sports/e-sports",
+      "text": "E-sports are competitive video gaming events with professional players.",
+      "keywords": ["sports", "e-sports", "gaming"],
+      "metadata": {
+      "subtopics": ["sports", "gaming"],
+      "updatedAt": "2025-07-10T10:00:00Z",
+      "source": "https://www.esports.com/",
+      "category": "sports",
+      "priority": 0.83
+      },
+      "relations": {
+      "relatedFacts": [26, 40],
+      "relatedTopics": ["sports/analytics", "gaming/game-design"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 66,
+      "topic": "robotics/swarm-robotics",
+      "text": "Swarm robotics coordinates multiple robots for collective tasks.",
+      "keywords": ["robotics", "swarm", "automation"],
+      "metadata": {
+      "subtopics": ["robotics", "automation"],
+      "updatedAt": "2025-07-10T11:00:00Z",
+      "source": "https://www.swarmrobot.org/",
+      "category": "robotics",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [18, 45],
+      "relatedTopics": ["robotics/automation", "robotics/humanoid"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 67,
+      "topic": "education/critical-media-literacy",
+      "text": "Critical media literacy teaches analysis of media messages and bias.",
+      "keywords": ["education", "media", "literacy"],
+      "metadata": {
+      "subtopics": ["education", "media"],
+      "updatedAt": "2025-07-10T12:00:00Z",
+      "source": "https://www.criticalmedialiteracy.org/",
+      "category": "education",
+      "priority": 0.84
+      },
+      "relations": {
+      "relatedFacts": [49, 52],
+      "relatedTopics": ["media/digital-literacy", "education/learning-sciences"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 68,
+      "topic": "philosophy/ethics-of-ai",
+      "text": "The ethics of AI addresses moral questions in artificial intelligence.",
+      "keywords": ["philosophy", "ethics", "ai"],
+      "metadata": {
+      "subtopics": ["philosophy", "artificial-intelligence"],
+      "updatedAt": "2025-07-10T13:00:00Z",
+      "source": "https://www.aaai.org/ethics/",
+      "category": "philosophy",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [3, 29],
+      "relatedTopics": ["ai/ethics", "artificial-intelligence/computer-vision"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 69,
+      "topic": "energy/geothermal",
+      "text": "Geothermal energy harnesses heat from the Earth for power generation.",
+      "keywords": ["energy", "geothermal", "renewable"],
+      "metadata": {
+      "subtopics": ["energy", "renewable-energy"],
+      "updatedAt": "2025-07-10T14:00:00Z",
+      "source": "https://www.geothermal-energy.org/",
+      "category": "energy",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [20, 43],
+      "relatedTopics": ["renewable-energy/solar", "energy/hydrogen"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 70,
+      "topic": "linguistics/sign-language",
+      "text": "Sign languages are fully developed natural languages using visual gestures.",
+      "keywords": ["linguistics", "sign-language", "communication"],
+      "metadata": {
+      "subtopics": ["linguistics", "communication"],
+      "updatedAt": "2025-07-10T15:00:00Z",
+      "source": "https://www.nidcd.nih.gov/health/american-sign-language",
+      "category": "linguistics",
+      "priority": 0.85
+      },
+      "relations": {
+      "relatedFacts": [33, 1],
+      "relatedTopics": ["linguistics/phonetics", "ai/nlp"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 71,
+      "topic": "technology/edge-computing",
+      "text": "Edge computing processes data closer to the source for faster results.",
+      "keywords": ["technology", "edge-computing", "data"],
+      "metadata": {
+      "subtopics": ["technology", "computing"],
+      "updatedAt": "2025-07-10T16:00:00Z",
+      "source": "https://www.edgecomputing.org/",
+      "category": "technology",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [2, 18],
+      "relatedTopics": ["ai/deep-learning", "robotics/automation"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 72,
+      "topic": "medicine/precision-medicine",
+      "text": "Precision medicine tailors treatments to individual genetic profiles.",
+      "keywords": ["medicine", "precision-medicine", "genetics"],
+      "metadata": {
+      "subtopics": ["medicine", "genetics"],
+      "updatedAt": "2025-07-10T17:00:00Z",
+      "source": "https://www.genome.gov/precision-medicine",
+      "category": "medicine",
+      "priority": 0.91
+      },
+      "relations": {
+      "relatedFacts": [48, 59],
+      "relatedTopics": ["medicine/genomics", "medicine/immunotherapy"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 73,
+      "topic": "space-exploration/space-debris",
+      "text": "Space debris management ensures safe operations in Earth's orbit.",
+      "keywords": ["space", "debris", "management"],
+      "metadata": {
+      "subtopics": ["space-exploration", "sustainability"],
+      "updatedAt": "2025-07-10T18:00:00Z",
+      "source": "https://www.spacedebris.org/",
+      "category": "space-exploration",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [13, 60],
+      "relatedTopics": ["space-exploration/mars", "space-exploration/asteroid-mining"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 74,
+      "topic": "psychology/behavioral-economics",
+      "text": "Behavioral economics examines psychological factors in economic decisions.",
+      "keywords": ["psychology", "economics", "behavior"],
+      "metadata": {
+      "subtopics": ["psychology", "economics"],
+      "updatedAt": "2025-07-10T19:00:00Z",
+      "source": "https://www.behavioraleconomics.com/",
+      "category": "psychology",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [25, 27],
+      "relatedTopics": ["psychology/cognitive-bias", "finance/investment"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 75,
+      "topic": "technology/quantum-cryptography",
+      "text": "Quantum cryptography uses quantum mechanics to secure communication.",
+      "keywords": ["quantum", "cryptography", "security"],
+      "metadata": {
+      "subtopics": ["technology", "data-security"],
+      "updatedAt": "2025-07-10T20:00:00Z",
+      "source": "https://www.quantumcryptography.com/",
+      "category": "technology",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [12, 6],
+      "relatedTopics": ["data-security/cryptography", "blockchain/ledger"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 76,
+      "topic": "biology/ecological-genomics",
+      "text": "Ecological genomics studies the interaction between genes and the environment.",
+      "keywords": ["biology", "genomics", "ecology"],
+      "metadata": {
+      "subtopics": ["biology", "ecology"],
+      "updatedAt": "2025-07-10T21:00:00Z",
+      "source": "https://www.ecologicalgenomics.org/",
+      "category": "biology",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [48, 63],
+      "relatedTopics": ["medicine/genomics", "environment/biodiversity"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 77,
+      "topic": "space-exploration/lunar-economy",
+      "text": "The lunar economy explores commercial opportunities on the Moon.",
+      "keywords": ["space", "lunar", "economy"],
+      "metadata": {
+      "subtopics": ["space-exploration", "economics"],
+      "updatedAt": "2025-07-10T22:00:00Z",
+      "source": "https://www.lunareconomy.org/",
+      "category": "space-exploration",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [14, 60],
+      "relatedTopics": ["space-exploration/moon", "space-exploration/asteroid-mining"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 78,
+      "topic": "education/virtual-reality-learning",
+      "text": "Virtual reality enhances learning experiences through immersive environments.",
+      "keywords": ["education", "virtual-reality", "learning"],
+      "metadata": {
+      "subtopics": ["education", "technology"],
+      "updatedAt": "2025-07-10T23:00:00Z",
+      "source": "https://www.vrlearning.org/",
+      "category": "education",
+      "priority": 0.85
+      },
+      "relations": {
+      "relatedFacts": [15, 16],
+      "relatedTopics": ["education/online-learning", "education/edtech"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 79,
+      "topic": "technology/blockchain-interoperability",
+      "text": "Blockchain interoperability enables seamless communication between different blockchain networks.",
+      "keywords": ["blockchain", "interoperability", "technology"],
+      "metadata": {
+      "subtopics": ["blockchain", "technology"],
+      "updatedAt": "2025-07-11T00:00:00Z",
+      "source": "https://www.blockchaininteroperability.org/",
+      "category": "technology",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [6, 58],
+      "relatedTopics": ["blockchain/ledger", "finance/decentralized-finance"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 80,
+      "topic": "health/mental-health-apps",
+      "text": "Mental health apps provide tools for stress management and emotional well-being.",
+      "keywords": ["health", "mental-health", "apps"],
+      "metadata": {
+      "subtopics": ["health", "technology"],
+      "updatedAt": "2025-07-11T01:00:00Z",
+      "source": "https://www.mentalhealthapps.org/",
+      "category": "health",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [25, 62],
+      "relatedTopics": ["psychology/cognitive-bias", "psychology/positive-psychology"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 81,
+      "topic": "environment/urban-forestry",
+      "text": "Urban forestry integrates trees into city planning for environmental and social benefits.",
+      "keywords": ["environment", "urban-forestry", "sustainability"],
+      "metadata": {
+      "subtopics": ["environment", "urban-planning"],
+      "updatedAt": "2025-07-11T02:00:00Z",
+      "source": "https://www.urbanforestry.org/",
+      "category": "environment",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [22, 63],
+      "relatedTopics": ["urban-planning/smart-cities", "environment/biodiversity"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 82,
+      "topic": "robotics/soft-robotics",
+      "text": "Soft robotics focuses on flexible and adaptive robots for delicate tasks.",
+      "keywords": ["robotics", "soft-robotics", "automation"],
+      "metadata": {
+      "subtopics": ["robotics", "automation"],
+      "updatedAt": "2025-07-11T03:00:00Z",
+      "source": "https://www.softrobotics.org/",
+      "category": "robotics",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [18, 66],
+      "relatedTopics": ["robotics/automation", "robotics/swarm-robotics"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 83,
+      "topic": "technology/augmented-reality",
+      "text": "Augmented reality overlays digital content onto the real world.",
+      "keywords": ["technology", "augmented-reality", "AR"],
+      "metadata": {
+      "subtopics": ["technology", "visualization"],
+      "updatedAt": "2025-07-11T04:00:00Z",
+      "source": "https://www.augmentedreality.org/",
+      "category": "technology",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [78, 15],
+      "relatedTopics": ["education/virtual-reality-learning", "education/online-learning"]
+      },
+      "embedding": [0.09, 0.04, -0.02, 0.07, 0.0, 0.12, -0.01, 0.06, 0.10, -0.05, 0.03, 0.02, -0.01, 0.05, 0.0, 0.08, -0.02, 0.04, 0.07, -0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 84,
+      "topic": "health/telemedicine",
+      "text": "Telemedicine connects patients with doctors remotely using technology.",
+      "keywords": ["health", "telemedicine", "remote-care"],
+      "metadata": {
+      "subtopics": ["health", "technology"],
+      "updatedAt": "2025-07-11T05:00:00Z",
+      "source": "https://www.telemedicine.org/",
+      "category": "health",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [30, 80],
+      "relatedTopics": ["medicine/telehealth", "health/mental-health-apps"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 85,
+      "topic": "energy/wind-energy",
+      "text": "Wind energy converts wind into electricity using turbines.",
+      "keywords": ["energy", "wind", "renewable"],
+      "metadata": {
+      "subtopics": ["energy", "renewable-energy"],
+      "updatedAt": "2025-07-11T06:00:00Z",
+      "source": "https://www.windenergy.org/",
+      "category": "energy",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [20, 69],
+      "relatedTopics": ["renewable-energy/solar", "energy/geothermal"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 86,
+      "topic": "biology/microbiome",
+      "text": "The microbiome consists of microorganisms living in and on the human body.",
+      "keywords": ["biology", "microbiome", "health"],
+      "metadata": {
+      "subtopics": ["biology", "health"],
+      "updatedAt": "2025-07-11T07:00:00Z",
+      "source": "https://www.microbiome.org/",
+      "category": "biology",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [9, 48],
+      "relatedTopics": ["health/nutrition", "medicine/genomics"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 87,
+      "topic": "technology/5g-networks",
+      "text": "5G networks provide faster and more reliable wireless communication.",
+      "keywords": ["technology", "5g", "networks"],
+      "metadata": {
+      "subtopics": ["technology", "communication"],
+      "updatedAt": "2025-07-11T08:00:00Z",
+      "source": "https://www.5g.org/",
+      "category": "technology",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [71, 18],
+      "relatedTopics": ["technology/edge-computing", "robotics/automation"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 88,
+      "topic": "space-exploration/space-habitats",
+      "text": "Space habitats are designed to support human life beyond Earth.",
+      "keywords": ["space", "habitats", "exploration"],
+      "metadata": {
+      "subtopics": ["space-exploration", "engineering"],
+      "updatedAt": "2025-07-11T09:00:00Z",
+      "source": "https://www.spacehabitats.org/",
+      "category": "space-exploration",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [14, 77],
+      "relatedTopics": ["space-exploration/moon", "space-exploration/lunar-economy"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 89,
+      "topic": "robotics/exoskeletons",
+      "text": "Exoskeletons enhance human strength and mobility using robotic technology.",
+      "keywords": ["robotics", "exoskeletons", "technology"],
+      "metadata": {
+      "subtopics": ["robotics", "health"],
+      "updatedAt": "2025-07-11T10:00:00Z",
+      "source": "https://www.exoskeletons.org/",
+      "category": "robotics",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [18, 82],
+      "relatedTopics": ["robotics/automation", "robotics/soft-robotics"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 90,
+      "topic": "finance/green-investments",
+      "text": "Green investments focus on funding environmentally sustainable projects.",
+      "keywords": ["finance", "green", "investments"],
+      "metadata": {
+      "subtopics": ["finance", "sustainability"],
+      "updatedAt": "2025-07-11T11:00:00Z",
+      "source": "https://www.greeninvestments.org/",
+      "category": "finance",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [27, 54],
+      "relatedTopics": ["finance/investment", "chemistry/green-chemistry"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 91,
+      "topic": "technology/ai-in-healthcare",
+      "text": "AI in healthcare improves diagnostics and personalized treatments.",
+      "keywords": ["ai", "healthcare", "technology"],
+      "metadata": {
+      "subtopics": ["technology", "medicine"],
+      "updatedAt": "2025-07-11T12:00:00Z",
+      "source": "https://www.aihealthcare.org/",
+      "category": "technology",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [30, 72],
+      "relatedTopics": ["medicine/telehealth", "medicine/precision-medicine"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 92,
+      "topic": "education/gamification",
+      "text": "Gamification in education enhances engagement through game-like elements.",
+      "keywords": ["education", "gamification", "learning"],
+      "metadata": {
+      "subtopics": ["education", "technology"],
+      "updatedAt": "2025-07-11T13:00:00Z",
+      "source": "https://www.gamificationineducation.org/",
+      "category": "education",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [15, 40],
+      "relatedTopics": ["education/online-learning", "gaming/game-design"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 93,
+      "topic": "environment/carbon-capture",
+      "text": "Carbon capture technology reduces greenhouse gas emissions.",
+      "keywords": ["environment", "carbon-capture", "technology"],
+      "metadata": {
+      "subtopics": ["environment", "climate-engineering"],
+      "updatedAt": "2025-07-11T14:00:00Z",
+      "source": "https://www.carboncapture.org/",
+      "category": "environment",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [42, 54],
+      "relatedTopics": ["climate-engineering/geoengineering", "chemistry/green-chemistry"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 94,
+      "topic": "robotics/agricultural-robots",
+      "text": "Agricultural robots automate farming tasks to increase efficiency.",
+      "keywords": ["robotics", "agriculture", "automation"],
+      "metadata": {
+      "subtopics": ["robotics", "agriculture"],
+      "updatedAt": "2025-07-11T15:00:00Z",
+      "source": "https://www.agriculturalrobots.org/",
+      "category": "robotics",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [18, 56],
+      "relatedTopics": ["robotics/automation", "agriculture/hydroponics"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 95,
+      "topic": "technology/brain-computer-interfaces",
+      "text": "Brain-computer interfaces enable direct communication between the brain and external devices.",
+      "keywords": ["technology", "brain-computer", "interfaces"],
+      "metadata": {
+      "subtopics": ["technology", "neuroscience"],
+      "updatedAt": "2025-07-11T16:00:00Z",
+      "source": "https://www.bci.org/",
+      "category": "technology",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [44, 91],
+      "relatedTopics": ["psychology/neuroscience", "technology/ai-in-healthcare"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 96,
+      "topic": "environment/eco-tourism",
+      "text": "Eco-tourism promotes sustainable travel to natural areas.",
+      "keywords": ["environment", "eco-tourism", "sustainability"],
+      "metadata": {
+      "subtopics": ["environment", "tourism"],
+      "updatedAt": "2025-07-11T17:00:00Z",
+      "source": "https://www.ecotourism.org/",
+      "category": "environment",
+      "priority": 0.86
+      },
+      "relations": {
+      "relatedFacts": [23, 81],
+      "relatedTopics": ["oceanography/marine-conservation", "environment/urban-forestry"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 97,
+      "topic": "technology/quantum-computing",
+      "text": "Quantum computing leverages quantum mechanics for advanced computation.",
+      "keywords": ["technology", "quantum-computing", "computation"],
+      "metadata": {
+      "subtopics": ["technology", "computing"],
+      "updatedAt": "2025-07-11T18:00:00Z",
+      "source": "https://www.quantumcomputing.org/",
+      "category": "technology",
+      "priority": 0.90
+      },
+      "relations": {
+      "relatedFacts": [75, 87],
+      "relatedTopics": ["technology/quantum-cryptography", "technology/5g-networks"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 98,
+      "topic": "health/nanomedicine",
+      "text": "Nanomedicine applies nanotechnology to diagnose and treat diseases.",
+      "keywords": ["health", "nanomedicine", "nanotechnology"],
+      "metadata": {
+      "subtopics": ["health", "nanotechnology"],
+      "updatedAt": "2025-07-11T19:00:00Z",
+      "source": "https://www.nanomedicine.org/",
+      "category": "health",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [48, 72],
+      "relatedTopics": ["medicine/genomics", "medicine/precision-medicine"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 99,
+      "topic": "technology/holographic-displays",
+      "text": "Holographic displays create three-dimensional images using light diffraction.",
+      "keywords": ["technology", "holography", "displays"],
+      "metadata": {
+      "subtopics": ["technology", "visualization"],
+      "updatedAt": "2025-07-11T20:00:00Z",
+      "source": "https://www.holographicdisplays.org/",
+      "category": "technology",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [83, 78],
+      "relatedTopics": ["technology/augmented-reality", "education/virtual-reality-learning"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 100,
+      "topic": "environment/renewable-materials",
+      "text": "Renewable materials are derived from sustainable sources for eco-friendly applications.",
+      "keywords": ["environment", "renewable", "materials"],
+      "metadata": {
+      "subtopics": ["environment", "materials-science"],
+      "updatedAt": "2025-07-11T21:00:00Z",
+      "source": "https://www.renewablematerials.org/",
+      "category": "environment",
+      "priority": 0.87
+      },
+      "relations": {
+      "relatedFacts": [64, 54],
+      "relatedTopics": ["chemistry/materials-discovery", "chemistry/green-chemistry"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    {
+      "id": 101,
+      "topic": "robotics/underwater-robots",
+      "text": "Underwater robots explore and perform tasks in aquatic environments.",
+      "keywords": ["robotics", "underwater", "exploration"],
+      "metadata": {
+      "subtopics": ["robotics", "oceanography"],
+      "updatedAt": "2025-07-11T22:00:00Z",
+      "source": "https://www.underwaterrobots.org/",
+      "category": "robotics",
+      "priority": 0.88
+      },
+      "relations": {
+      "relatedFacts": [23, 82],
+      "relatedTopics": ["oceanography/marine-conservation", "robotics/soft-robotics"]
+      },
+      "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": 102,
+      "topic": "finance/social-impact-investing",
+      "text": "Social impact investing funds projects that generate positive societal outcomes.",
+      "keywords": ["finance", "social-impact", "investing"],
+      "metadata": {
+      "subtopics": ["finance", "sustainability"],
+      "updatedAt": "2025-07-11T23:00:00Z",
+      "source": "https://www.socialimpactinvesting.org/",
+      "category": "finance",
+      "priority": 0.89
+      },
+      "relations": {
+      "relatedFacts": [27, 90],
+      "relatedTopics": ["finance/investment", "finance/green-investments"]
+      },
+      "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+    },
+    
+  {
+    "id": 103,
+    "topic": "technology/edge-computing",
+    "text": "Edge computing processes data closer to its source for faster response times.",
+    "keywords": ["edge-computing", "technology", "data-processing"],
+    "metadata": {
+      "subtopics": ["technology", "computing"],
+      "updatedAt": "2025-07-12T00:00:00Z",
+      "source": "https://www.edgecomputing.org/",
+      "category": "technology",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [87, 91],
+      "relatedTopics": ["technology/5g-networks", "technology/iot"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 104,
+    "topic": "health/telemedicine",
+    "text": "Telemedicine enables remote healthcare delivery through digital platforms.",
+    "keywords": ["telemedicine", "health", "remote-care"],
+    "metadata": {
+      "subtopics": ["health", "technology"],
+      "updatedAt": "2025-07-12T01:00:00Z",
+      "source": "https://www.telemedicine.org/",
+      "category": "health",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [91, 8],
+      "relatedTopics": ["technology/ai-in-healthcare", "health/wearables"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 105,
+    "topic": "environment/urban-farming",
+    "text": "Urban farming promotes sustainable food production in city environments.",
+    "keywords": ["urban-farming", "environment", "sustainability"],
+    "metadata": {
+      "subtopics": ["environment", "agriculture"],
+      "updatedAt": "2025-07-12T02:00:00Z",
+      "source": "https://www.urbanfarming.org/",
+      "category": "environment",
+      "priority": 0.86
+    },
+    "relations": {
+      "relatedFacts": [94, 10],
+      "relatedTopics": ["environment/sustainability", "agriculture/hydroponics"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 106,
+    "topic": "biotech/synthetic-biology",
+    "text": "Synthetic biology designs and constructs new biological systems.",
+    "keywords": ["synthetic-biology", "biotech", "engineering"],
+    "metadata": {
+      "subtopics": ["biotech", "genetics"],
+      "updatedAt": "2025-07-12T03:00:00Z",
+      "source": "https://www.syntheticbiology.org/",
+      "category": "biotech",
+      "priority": 0.89
+    },
+    "relations": {
+      "relatedFacts": [17, 98],
+      "relatedTopics": ["biotech/genetics", "health/nanomedicine"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 107,
+    "topic": "space-exploration/asteroid-mining",
+    "text": "Asteroid mining extracts valuable resources from celestial bodies.",
+    "keywords": ["asteroid-mining", "space", "resources"],
+    "metadata": {
+      "subtopics": ["space-exploration", "mining"],
+      "updatedAt": "2025-07-12T04:00:00Z",
+      "source": "https://www.asteroidmining.org/",
+      "category": "space-exploration",
+      "priority": 0.90
+    },
+    "relations": {
+      "relatedFacts": [13, 88],
+      "relatedTopics": ["space-exploration/moon", "space-exploration/space-habitats"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 108,
+    "topic": "robotics/swarm-robotics",
+    "text": "Swarm robotics coordinates multiple robots for collaborative tasks.",
+    "keywords": ["swarm-robotics", "robotics", "collaboration"],
+    "metadata": {
+      "subtopics": ["robotics", "automation"],
+      "updatedAt": "2025-07-12T05:00:00Z",
+      "source": "https://www.swarmrobotics.org/",
+      "category": "robotics",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [18, 94],
+      "relatedTopics": ["robotics/automation", "robotics/underwater-robots"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 109,
+    "topic": "finance/blockchain-finance",
+    "text": "Blockchain finance enhances transparency in financial transactions.",
+    "keywords": ["blockchain-finance", "finance", "transparency"],
+    "metadata": {
+      "subtopics": ["finance", "blockchain"],
+      "updatedAt": "2025-07-12T06:00:00Z",
+      "source": "https://www.blockchainfinance.org/",
+      "category": "finance",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [6, 7],
+      "relatedTopics": ["blockchain/ledger", "blockchain/cryptocurrency"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 110,
+    "topic": "education/adaptive-learning",
+    "text": "Adaptive learning tailors educational content to individual student needs.",
+    "keywords": ["adaptive-learning", "education", "personalization"],
+    "metadata": {
+      "subtopics": ["education", "technology"],
+      "updatedAt": "2025-07-12T07:00:00Z",
+      "source": "https://www.adaptivelearning.org/",
+      "category": "education",
+      "priority": 0.86
+    },
+    "relations": {
+      "relatedFacts": [15, 92],
+      "relatedTopics": ["education/online-learning", "education/gamification"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 111,
+    "topic": "environment/bioplastics",
+    "text": "Bioplastics are derived from renewable biomass sources for eco-friendly packaging.",
+    "keywords": ["bioplastics", "environment", "sustainability"],
+    "metadata": {
+      "subtopics": ["environment", "materials-science"],
+      "updatedAt": "2025-07-12T08:00:00Z",
+      "source": "https://www.bioplastics.org/",
+      "category": "environment",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [100, 93],
+      "relatedTopics": ["environment/renewable-materials", "environment/carbon-capture"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 112,
+    "topic": "technology/quantum-cryptography",
+    "text": "Quantum cryptography uses quantum mechanics to secure communications.",
+    "keywords": ["quantum-cryptography", "technology", "security"],
+    "metadata": {
+      "subtopics": ["technology", "cryptography"],
+      "updatedAt": "2025-07-12T09:00:00Z",
+      "source": "https://www.quantumcryptography.org/",
+      "category": "technology",
+      "priority": 0.90
+    },
+    "relations": {
+      "relatedFacts": [97, 12],
+      "relatedTopics": ["technology/quantum-computing", "data-security/cryptography"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 113,
+    "topic": "health/precision-medicine",
+    "text": "Precision medicine customizes treatments based on genetic profiles.",
+    "keywords": ["precision-medicine", "health", "genetics"],
+    "metadata": {
+      "subtopics": ["health", "genomics"],
+      "updatedAt": "2025-07-12T10:00:00Z",
+      "source": "https://www.precisionmedicine.org/",
+      "category": "health",
+      "priority": 0.89
+    },
+    "relations": {
+      "relatedFacts": [91, 17],
+      "relatedTopics": ["technology/ai-in-healthcare", "biotech/genetics"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 114,
+    "topic": "environment/waste-to-energy",
+    "text": "Waste-to-energy systems convert waste into usable energy forms.",
+    "keywords": ["waste-to-energy", "environment", "energy"],
+    "metadata": {
+      "subtopics": ["environment", "energy"],
+      "updatedAt": "2025-07-12T11:00:00Z",
+      "source": "https://www.wastetoenergy.org/",
+      "category": "environment",
+      "priority": 0.86
+    },
+    "relations": {
+      "relatedFacts": [20, 93],
+      "relatedTopics": ["renewable-energy/solar", "environment/carbon-capture"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 115,
+    "topic": "technology/augmented-reality",
+    "text": "Augmented reality overlays digital information onto the physical world.",
+    "keywords": ["augmented-reality", "technology", "visualization"],
+    "metadata": {
+      "subtopics": ["technology", "visualization"],
+      "updatedAt": "2025-07-12T12:00:00Z",
+      "source": "https://www.augmentedreality.org/",
+      "category": "technology",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [99, 92],
+      "relatedTopics": ["technology/holographic-displays", "education/gamification"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 116,
+    "topic": "biotech/crispr",
+    "text": "CRISPR technology enables precise gene editing for medical advancements.",
+    "keywords": ["crispr", "biotech", "gene-editing"],
+    "metadata": {
+      "subtopics": ["biotech", "genetics"],
+      "updatedAt": "2025-07-12T13:00:00Z",
+      "source": "https://www.crispr.org/",
+      "category": "biotech",
+      "priority": 0.90
+    },
+    "relations": {
+      "relatedFacts": [17, 113],
+      "relatedTopics": ["biotech/genetics", "health/precision-medicine"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 117,
+    "topic": "space-exploration/space-tourism",
+    "text": "Space tourism offers commercial travel experiences beyond Earth.",
+    "keywords": ["space-tourism", "space", "travel"],
+    "metadata": {
+      "subtopics": ["space-exploration", "tourism"],
+      "updatedAt": "2025-07-12T14:00:00Z",
+      "source": "https://www.spacetourism.org/",
+      "category": "space-exploration",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [88, 14],
+      "relatedTopics": ["space-exploration/space-habitats", "space-exploration/moon"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 118,
+    "topic": "robotics/soft-robotics",
+    "text": "Soft robotics uses flexible materials for adaptive robotic systems.",
+    "keywords": ["soft-robotics", "robotics", "flexible"],
+    "metadata": {
+      "subtopics": ["robotics", "engineering"],
+      "updatedAt": "2025-07-12T15:00:00Z",
+      "source": "https://www.softrobotics.org/",
+      "category": "robotics",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [89, 101],
+      "relatedTopics": ["robotics/exoskeletons", "robotics/underwater-robots"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 119,
+    "topic": "finance/decentralized-finance",
+    "text": "Decentralized finance uses blockchain for peer-to-peer financial services.",
+    "keywords": ["decentralized-finance", "finance", "blockchain"],
+    "metadata": {
+      "subtopics": ["finance", "blockchain"],
+      "updatedAt": "2025-07-12T16:00:00Z",
+      "source": "https://www.decentralizedfinance.org/",
+      "category": "finance",
+      "priority": 0.89
+    },
+    "relations": {
+      "relatedFacts": [7, 109],
+      "relatedTopics": ["blockchain/cryptocurrency", "finance/blockchain-finance"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 120,
+    "topic": "education/virtual-reality-learning",
+    "text": "Virtual reality learning immerses students in interactive educational environments.",
+    "keywords": ["virtual-reality", "education", "learning"],
+    "metadata": {
+      "subtopics": ["education", "technology"],
+      "updatedAt": "2025-07-12T17:00:00Z",
+      "source": "https://www.vrlearning.org/",
+      "category": "education",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [92, 99],
+      "relatedTopics": ["education/gamification", "technology/holographic-displays"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 121,
+    "topic": "environment/smart-grids",
+    "text": "Smart grids optimize electricity distribution using digital technology.",
+    "keywords": ["smart-grids", "environment", "energy"],
+    "metadata": {
+      "subtopics": ["environment", "energy"],
+      "updatedAt": "2025-07-12T18:00:00Z",
+      "source": "https://www.smartgrids.org/",
+      "category": "environment",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [20, 114],
+      "relatedTopics": ["renewable-energy/solar", "environment/waste-to-energy"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 122,
+    "topic": "biotech/regenerative-medicine",
+    "text": "Regenerative medicine restores damaged tissues using stem cells.",
+    "keywords": ["regenerative-medicine", "biotech", "stem-cells"],
+    "metadata": {
+      "subtopics": ["biotech", "health"],
+      "updatedAt": "2025-07-12T19:00:00Z",
+      "source": "https://www.regenerativemedicine.org/",
+      "category": "biotech",
+      "priority": 0.89
+    },
+    "relations": {
+      "relatedFacts": [98, 113],
+      "relatedTopics": ["health/nanomedicine", "health/precision-medicine"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  
+  {
+    "id": 123,
+    "topic": "culture/digital-nomadism",
+    "text": "Digital nomadism enables remote work while traveling globally.",
+    "keywords": ["digital-nomadism", "culture", "remote-work"],
+    "metadata": {
+      "subtopics": ["culture", "lifestyle"],
+      "updatedAt": "2025-07-13T00:00:00Z",
+      "source": "https://www.digitalnomadism.org/",
+      "category": "culture",
+      "priority": 0.85
+    },
+    "relations": {
+      "relatedFacts": [104, 110],
+      "relatedTopics": ["technology/telecommuting", "education/online-learning"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 124,
+    "topic": "agriculture/vertical-farming",
+    "text": "Vertical farming grows crops in stacked layers to maximize space.",
+    "keywords": ["vertical-farming", "agriculture", "sustainability"],
+    "metadata": {
+      "subtopics": ["agriculture", "environment"],
+      "updatedAt": "2025-07-13T01:00:00Z",
+      "source": "https://www.verticalfarming.org/",
+      "category": "agriculture",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [105, 94],
+      "relatedTopics": ["environment/urban-farming", "agriculture/hydroponics"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 125,
+    "topic": "technology/haptic-feedback",
+    "text": "Haptic feedback provides tactile sensations in digital interactions.",
+    "keywords": ["haptic-feedback", "technology", "user-experience"],
+    "metadata": {
+      "subtopics": ["technology", "human-computer-interaction"],
+      "updatedAt": "2025-07-13T02:00:00Z",
+      "source": "https://www.haptictechnology.org/",
+      "category": "technology",
+      "priority": 0.86
+    },
+    "relations": {
+      "relatedFacts": [115, 99],
+      "relatedTopics": ["technology/augmented-reality", "technology/virtual-reality"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 126,
+    "topic": "health/mental-wellness-apps",
+    "text": "Mental wellness apps provide digital tools for stress and anxiety management.",
+    "keywords": ["mental-wellness", "health", "apps"],
+    "metadata": {
+      "subtopics": ["health", "technology"],
+      "updatedAt": "2025-07-13T03:00:00Z",
+      "source": "https://www.mentalwellnessapps.org/",
+      "category": "health",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [104, 113],
+      "relatedTopics": ["health/telemedicine", "technology/ai-in-healthcare"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 127,
+    "topic": "environment/microplastics",
+    "text": "Microplastics are tiny plastic particles polluting ecosystems.",
+    "keywords": ["microplastics", "environment", "pollution"],
+    "metadata": {
+      "subtopics": ["environment", "pollution"],
+      "updatedAt": "2025-07-13T04:00:00Z",
+      "source": "https://www.microplastics.org/",
+      "category": "environment",
+      "priority": 0.89
+    },
+    "relations": {
+      "relatedFacts": [111, 93],
+      "relatedTopics": ["environment/bioplastics", "environment/ocean-conservation"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 128,
+    "topic": "culture/gig-economy",
+    "text": "The gig economy offers flexible, short-term work opportunities.",
+    "keywords": ["gig-economy", "culture", "workforce"],
+    "metadata": {
+      "subtopics": ["culture", "economics"],
+      "updatedAt": "2025-07-13T05:00:00Z",
+      "source": "https://www.gigeconomy.org/",
+      "category": "culture",
+      "priority": 0.86
+    },
+    "relations": {
+      "relatedFacts": [123, 91],
+      "relatedTopics": ["culture/digital-nomadism", "finance/freelancing"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 129,
+    "topic": "technology/neuromorphic-computing",
+    "text": "Neuromorphic computing mimics brain structures for efficient processing.",
+    "keywords": ["neuromorphic-computing", "technology", "ai"],
+    "metadata": {
+      "subtopics": ["technology", "artificial-intelligence"],
+      "updatedAt": "2025-07-13T06:00:00Z",
+      "source": "https://www.neuromorphiccomputing.org/",
+      "category": "technology",
+      "priority": 0.90
+    },
+    "relations": {
+      "relatedFacts": [97, 12],
+      "relatedTopics": ["technology/ai", "technology/quantum-computing"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 130,
+    "topic": "space-exploration/exoplanet-research",
+    "text": "Exoplanet research studies planets outside our solar system.",
+    "keywords": ["exoplanet-research", "space", "astronomy"],
+    "metadata": {
+      "subtopics": ["space-exploration", "astronomy"],
+      "updatedAt": "2025-07-13T07:00:00Z",
+      "source": "https://www.exoplanetresearch.org/",
+      "category": "space-exploration",
+      "priority": 0.89
+    },
+    "relations": {
+      "relatedFacts": [88, 13],
+      "relatedTopics": ["space-exploration/asteroid-mining", "space-exploration/telescopes"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 131,
+    "topic": "biotech/microbiome",
+    "text": "Microbiome research explores microbial communities in human health.",
+    "keywords": ["microbiome", "biotech", "health"],
+    "metadata": {
+      "subtopics": ["biotech", "health"],
+      "updatedAt": "2025-07-13T08:00:00Z",
+      "source": "https://www.microbiomeresearch.org/",
+      "category": "biotech",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [113, 122],
+      "relatedTopics": ["health/precision-medicine", "biotech/regenerative-medicine"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 132,
+    "topic": "education/microcredentials",
+    "text": "Microcredentials offer short, focused certifications for specific skills.",
+    "keywords": ["microcredentials", "education", "skills"],
+    "metadata": {
+      "subtopics": ["education", "career-development"],
+      "updatedAt": "2025-07-13T09:00:00Z",
+      "source": "https://www.microcredentials.org/",
+      "category": "education",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [110, 92],
+      "relatedTopics": ["education/adaptive-learning", "education/online-learning"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 133,
+    "topic": "environment/green-architecture",
+    "text": "Green architecture designs buildings with sustainable materials and energy efficiency.",
+    "keywords": ["green-architecture", "environment", "sustainability"],
+    "metadata": {
+      "subtopics": ["environment", "architecture"],
+      "updatedAt": "2025-07-13T10:00:00Z",
+      "source": "https://www.greenarchitecture.org/",
+      "category": "environment",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [105, 121],
+      "relatedTopics": ["environment/smart-grids", "environment/urban-farming"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 134,
+    "topic": "technology/brain-computer-interfaces",
+    "text": "Brain-computer interfaces enable direct communication between brains and devices.",
+    "keywords": ["brain-computer-interfaces", "technology", "neurotechnology"],
+    "metadata": {
+      "subtopics": ["technology", "neuroscience"],
+      "updatedAt": "2025-07-13T11:00:00Z",
+      "source": "https://www.braincomputerinterfaces.org/",
+      "category": "technology",
+      "priority": 0.90
+    },
+    "relations": {
+      "relatedFacts": [129, 91],
+      "relatedTopics": ["technology/neuromorphic-computing", "health/mental-wellness-apps"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 135,
+    "topic": "health/wearable-sensors",
+    "text": "Wearable sensors monitor health metrics in real-time for personalized care.",
+    "keywords": ["wearable-sensors", "health", "monitoring"],
+    "metadata": {
+      "subtopics": ["health", "technology"],
+      "updatedAt": "2025-07-13T12:00:00Z",
+      "source": "https://www.wearablesensors.org/",
+      "category": "health",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [104, 113],
+      "relatedTopics": ["health/telemedicine", "technology/iot"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 136,
+    "topic": "culture/esports",
+    "text": "Esports involves competitive video gaming with global tournaments.",
+    "keywords": ["esports", "culture", "gaming"],
+    "metadata": {
+      "subtopics": ["culture", "entertainment"],
+      "updatedAt": "2025-07-13T13:00:00Z",
+      "source": "https://www.esports.org/",
+      "category": "culture",
+      "priority": 0.86
+    },
+    "relations": {
+      "relatedFacts": [115, 120],
+      "relatedTopics": ["technology/augmented-reality", "education/gamification"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 137,
+    "topic": "environment/geoengineering",
+    "text": "Geoengineering manipulates Earth's systems to combat climate change.",
+    "keywords": ["geoengineering", "environment", "climate"],
+    "metadata": {
+      "subtopics": ["environment", "climate-science"],
+      "updatedAt": "2025-07-13T14:00:00Z",
+      "source": "https://www.geoengineering.org/",
+      "category": "environment",
+      "priority": 0.89
+    },
+    "relations": {
+      "relatedFacts": [93, 114],
+      "relatedTopics": ["environment/carbon-capture", "environment/smart-grids"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 138,
+    "topic": "biotech/synthetic-organs",
+    "text": "Synthetic organs are lab-grown replacements for damaged human organs.",
+    "keywords": ["synthetic-organs", "biotech", "health"],
+    "metadata": {
+      "subtopics": ["biotech", "health"],
+      "updatedAt": "2025-07-13T15:00:00Z",
+      "source": "https://www.syntheticorgans.org/",
+      "category": "biotech",
+      "priority": 0.90
+    },
+    "relations": {
+      "relatedFacts": [122, 116],
+      "relatedTopics": ["biotech/regenerative-medicine", "biotech/crispr"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 139,
+    "topic": "finance/robo-advisors",
+    "text": "Robo-advisors provide automated, algorithm-driven financial planning.",
+    "keywords": ["robo-advisors", "finance", "automation"],
+    "metadata": {
+      "subtopics": ["finance", "technology"],
+      "updatedAt": "2025-07-13T16:00:00Z",
+      "source": "https://www.roboadvisors.org/",
+      "category": "finance",
+      "priority": 0.87
+    },
+    "relations": {
+      "relatedFacts": [119, 109],
+      "relatedTopics": ["finance/decentralized-finance", "technology/ai"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 140,
+    "topic": "space-exploration/space-debris",
+    "text": "Space debris management addresses risks from orbiting junk.",
+    "keywords": ["space-debris", "space", "safety"],
+    "metadata": {
+      "subtopics": ["space-exploration", "safety"],
+      "updatedAt": "2025-07-13T17:00:00Z",
+      "source": "https://www.spacedebris.org/",
+      "category": "space-exploration",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [107, 117],
+      "relatedTopics": ["space-exploration/asteroid-mining", "space-exploration/space-tourism"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  },
+  {
+    "id": 141,
+    "topic": "culture/urban-mobility",
+    "text": "Urban mobility focuses on efficient, sustainable city transportation systems.",
+    "keywords": ["urban-mobility", "culture", "transportation"],
+    "metadata": {
+      "subtopics": ["culture", "environment"],
+      "updatedAt": "2025-07-13T18:00:00Z",
+      "source": "https://www.urbanmobility.org/",
+      "category": "culture",
+      "priority": 0.86
+    },
+    "relations": {
+      "relatedFacts": [105, 133],
+      "relatedTopics": ["environment/green-architecture", "technology/autonomous-vehicles"]
+    },
+    "embedding": [0.10, 0.05, -0.03, 0.08, 0.0, 0.12, -0.02, 0.07, 0.11, -0.06, 0.04, 0.02, -0.01, 0.06, 0.0, 0.09, -0.03, 0.05, 0.08, -0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  {
+    "id": 142,
+    "topic": "technology/3d-printing",
+    "text": "3D printing creates objects layer-by-layer from digital models.",
+    "keywords": ["3d-printing", "technology", "manufacturing"],
+    "metadata": {
+      "subtopics": ["technology", "manufacturing"],
+      "updatedAt": "2025-07-13T19:00:00Z",
+      "source": "https://www.3dprinting.org/",
+      "category": "technology",
+      "priority": 0.88
+    },
+    "relations": {
+      "relatedFacts": [111, 106],
+      "relatedTopics": ["biotech/synthetic-organs", "environment/bioplastics"]
+    },
+    "embedding": [0.11, 0.06, -0.03, 0.09, 0.01, 0.13, -0.02, 0.08, 0.12, -0.07, 0.05, 0.03, -0.02, 0.07, 0.01, 0.10, -0.04, 0.06, 0.09, -0.05, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  }
+]
+
+
+}
